@@ -104,15 +104,15 @@ p {
 
 .player-photo {
   border: solid;
+  background-color: #69BE28;
   border-color: #002244;
   border-width: 5px;
 }
 
 .player-photo-img {
   display: block;
-  height: 100%;
+  height: 300px;
   width: 300px;
-  min-height: 100%;
 }
 
 .player-name {
