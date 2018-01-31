@@ -23,6 +23,7 @@ p {
 }
 
 /* Begins the top */
+
 .banner {
   display: block;
   margin: auto;
@@ -51,11 +52,12 @@ p {
   width: 125px;
   border-right: solid;
   border-color: black;
-
 }
+
 /* Ends the top */
 
 /* Begins the content */
+
 main {
   margin-left: 2%;
   margin-right: 2%;
@@ -67,14 +69,16 @@ main {
   margin-bottom: 4%;
   min-width: 1183px;
   border: solid;
-  border-color: #A5ACAF ;
+  border-color: #A5ACAF;
   border-width: 10px;
   border-radius: 15px;
   box-shadow: 3px -3px black, -3px 3px black, 3px 3px black, -3px -3px black;
 }
+
 /* Ends the content */
 
 /* Begins the Overview */
+
 .overview {
   display: flex;
   background-color: #69bd27;
@@ -109,14 +113,15 @@ main {
   border-width: 5px;
 }
 
-.player-photo-img {
+.player-photo img {
   display: block;
   height: 300px;
   width: 300px;
 }
 
 .player-name {
-  background-color: #69BE28;;
+  background-color: #69BE28;
+  ;
   border: solid;
   border-color: #002244;
   border-left: 0px;
@@ -139,30 +144,30 @@ main {
 /* Begins the Needs */
 
 #needs {
-    display: block;
+  display: block;
 }
 
 .needs-card {
-    display: block;
-    border-bottom: solid;
-    border-bottom-width: 10px;
-    border-color: #A5ACAF;
+  display: block;
+  border-bottom: solid;
+  border-bottom-width: 10px;
+  border-color: #A5ACAF;
 }
 
 .needs-title {
-    background-color: #69BE28;
-    border: solid;
-    border-color: #002244;
-    border-width: 5px;
-    border-bottom-width: 1px;
+  background-color: #69BE28;
+  border: solid;
+  border-color: #002244;
+  border-width: 5px;
+  border-bottom-width: 1px;
 }
 
 .needs-text {
-    background-color: #69BE28;
-    border: solid;
-    border-color: #002244;
-    border-width: 5px;
-  }
+  background-color: #69BE28;
+  border: solid;
+  border-color: #002244;
+  border-width: 5px;
+}
 
 /* Ends the Needs */
 
@@ -200,7 +205,7 @@ main {
   display: flex;
 }
 
-.team{
+.team {
   display: block;
   text-align: center;
   width: 500px;
