@@ -1,57 +1,81 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Go Hawks '17</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
   <!-- Begins the top of the page -->
-  <div id="page-top">
-
+  <header>
     <!-- Begins the banner -->
     <div>
-      <a href="index.html"><img src="images/hawksbanner.jpg" alt="Go Hawks '17" id="banner"></a>
+      <a href="index.html">
+        <img src="images/hawksbanner.jpg" alt="Go Hawks '17" class="banner">
+      </a>
     </div>
     <!-- Ends the banner -->
-
     <!-- Begins the menu -->
-    <span id="menu">
-      <span class="menu"><a href="index.html"><img src="images/index.jpg" alt="Overview" class="menu-photo"></a></span>
-      <span class="menu"><a href="players.html"><img src="images/players.jpg" alt="Main Players" class="menu-photo"></a></span>
-      <span class="menu"><a href="needs.html"><img src="images/needs.jpg" alt="Team Needs" class="menu-photo"></a></span>
-      <span class="menu"><a href="schedule.html"><img src="images/schedule.jpg" alt="Schedule" class="menu-photo"></a></span>
-      <span class="menu"><a href="about.html"><img src="images/about.jpg" alt="About" class="menu-photo"></a></span>
-    </span>
+    <nav class="menu">
+      <div>
+        <a href="index.html">
+          <button>Overview</button>
+        </a>
+      </div>
+      <div>
+        <a href="players.html">
+          <button>Key Players</button>
+        </a>
+      </div>
+      <div>
+        <a href="needs.html">
+          <button>Team Needs</button>
+        </a>
+      </div>
+      <div>
+        <a href="schedule.html">
+          <button>Schedule</button>
+        </a>
+      </div>
+      <div>
+        <a href="about.html">
+          <button>About</button>
+        </a>
+      </div>
+    </nav>
     <!-- Ends the menu -->
-  </div>
+  </header>
   <!-- Ends the top -->
-
   <!-- Begins the content -->
-  <div id="content">
-    <h1>Overview</h1>
-    <div class="inner-content" style="border-bottom-width: 10px;">
+  <main>
+    <section class="content">
+      <!-- Begins the overview -->
+      <h1 class="content-header">Overview</h1>
+      <article class="overview">
+        <section class="overview-text">
+          <p>
+            The Seattle Seahawks is coming back from their 2016 season with a 10-6-1 record on the regular season and a playoff apperance,
+            where they defeated the Detroid Lions in the Wild Card game, but couldn't move past the Atlanta Falcons on their
+            way to the Super Bowl LI.
+            <br>
+            <br> Head Coach Pete Carroll and General Manager John Schneider count on this offseason to bring the Seahawks to
+            its 6° consecutive playoff appearance, which would set a franchise record, by fulfilling the
+            <a href="needs.html">team needs</a>. In order to do that they rely on signing veterans on the Free Agency, but mostly on the Draft,
+            where their magic works the best with an unusual good eye for rookie talents.
+          </p>
+        </section>
+        <section class="overview-img">
+          <img src="images/carroll-wilson.jpg" alt="Carroll and Wilson" style="display: block;">
+        </section>
+      </article>
+      <!-- Ends the overview -->
+    </section>
+  </main>
+  <!-- Ends the content -->
+</body>
 
-    <!-- Begins the overview -->
-    <div id="overview">
-      <div id="overview-text">
-        <p>
-          The Seattle Seahawks is coming back from their 2016 season with a 10-6-1 record on the regular season and a playoff apperance, where they defeated the Detroid Lions in the Wild Card game, but couldn't move past the Atlanta Falcons on their way to the Super Bowl LI.
-          <br><br>
-          Head Coach Pete Carroll and General Manager John Schneider count on this offseason to bring the Seahawks to its 6° consecutive playoff appearance, which would set a franchise record, by fulfilling the <a href="needs.html">team needs</a>. In order to do that they rely on signing veterans on the Free Agency, but mostly on the Draft, where their magic works the best with an unusual good eye for rookie talents.
-        </p>
-      </div>
-      <div id="overview-img">
-      <img src="images/carroll-wilson.jpg" alt="Carroll and Wilson" style="display: block;">
-      </div>
-    </div>
-    <!-- Ends the overview -->
-
-    </div>
-  </div>
-    <!-- Ends the content -->
-
-  </body>
-  </html>
+</html>

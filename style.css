@@ -23,7 +23,7 @@ p {
 }
 
 /* Begins the top */
-#banner {
+.banner {
   display: block;
   margin: auto;
   width: 1300px;
@@ -34,7 +34,7 @@ p {
   box-shadow: 3px -3px black, -3px 3px black, 3px 3px black, -3px -3px black;
 }
 
-#menu {
+.menu {
   display: flex;
   margin-top: 3px;
   height: 60px;
@@ -56,12 +56,12 @@ p {
 /* Ends the top */
 
 /* Begins the content */
-#content {
+main {
   margin-left: 2%;
   margin-right: 2%;
 }
 
-.inner-content {
+.content {
   margin-left: 3%;
   margin-right: 3%;
   margin-bottom: 4%;
@@ -75,7 +75,7 @@ p {
 /* Ends the content */
 
 /* Begins the Overview */
-#overview {
+.overview {
   display: flex;
   background-color: #69bd27;
   border: solid;
@@ -83,7 +83,7 @@ p {
   border-width: 5px;
 }
 
-#overview-text {
+.overview-text {
   border-right: solid;
   border-color: #002244;
   border-width: 5px;
