@@ -1,238 +1,177 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Go Hawks '17</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-  <!-- Begins the top of the page -->
-  <div id="page-top">
-
-    <!-- Begins the banner -->
+  <header>
     <div>
-      <a href="index.html"><img src="images/hawksbanner.jpg" alt="Go Hawks '17" id="banner"></a>
+      <a href="index.html">
+        <img src="images/hawksbanner.jpg" alt="Go Hawks '17" class="banner">
+      </a>
     </div>
-    <!-- Ends the banner -->
+    <nav class="menu">
+      <div>
+        <a href="index.html">
+          <button>Overview</button>
+        </a>
+      </div>
+      <div>
+        <a href="players.html">
+          <button>Key Players</button>
+        </a>
+      </div>
+      <div>
+        <a href="needs.html">
+          <button>Team Needs</button>
+        </a>
+      </div>
+      <div>
+        <a href="schedule.html">
+          <button>Schedule</button>
+        </a>
+      </div>
+      <div>
+        <a href="about.html">
+          <button>About</button>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1 class="title">Schedule</h1>
+    <section class="content">
 
-    <!-- Begins the menu -->
-    <span id="menu">
-      <span class="menu"><a href="index.html"><img src="images/index.jpg" alt="Overview" class="menu-photo"></a></span>
-      <span class="menu"><a href="players.html"><img src="images/players.jpg" alt="Main Players" class="menu-photo"></a></span>
-      <span class="menu"><a href="needs.html"><img src="images/needs.jpg" alt="Team Needs" class="menu-photo"></a></span>
-      <span class="menu"><a href="schedule.html"><img src="images/schedule.jpg" alt="Schedule" class="menu-photo"></a></span>
-      <span class="menu"><a href="about.html"><img src="images/about.jpg" alt="About" class="menu-photo"></a></span>
-    </span>
-    <!-- Ends the menu -->
-  </div>
-  <!-- Ends the top -->
-
-  <!-- Begins the content -->
-  <div id="content">
-    <h1 style="margin-bottom: 0px;">Schedule</h1>
-    <h3 style="margin-top: 0px; margin-left: 1.5%; color: #69BE28; text-shadow: -2px 0px black, 0px -2px black, -1px 0px black, 0px -1px black, 1px 0px black, 0px 1px black, 2px 0px black, 0px 2px black;">Game days/time to be announced</h3>
-    <div class="inner-content">
-
-    <!-- Begins the schedule -->
-      <div id="schedule">
-
-        <!-- Begins the home games -->
-        <div class="location">
-          <div class="location-title">
-            <h2>Home Games</h2>
-          </div>
-          <div class="games">
-
-            <!-- Begins team line 1-->
-            <div id="teams-line-1">
-
-            <!-- Begins the team -->
-            <div class="team">
-              <img class="team-photo" src="images/teams/cardinals.png" alt="Arizona Cardinals">
-              <div class="team-name">
-                <h4>Arizona Cardinals</h4>
-              </div>
-            </div>
-            <!-- Ends the team -->
-
-            <!-- Begins the team -->
-            <div class="team">
-              <img class="team-photo" src="images/teams/49ers.png" alt="San Francisco 49ers">
-              <div class="team-name">
-                <h4>San Francisco 49ers</h4>
-              </div>
-            </div>
-            <!-- Ends the team -->
-
-            <!-- Begins the team -->
-            <div class="team">
-              <img class="team-photo" src="images/teams/rams.png" alt="Los Angeles Rams">
-              <div class="team-name">
-                <h4>Los Angeles Rams</h4>
-              </div>
-            </div>
-            <!-- Ends the team -->
-
-            <!-- Begins the team -->
-            <div class="team">
-              <img class="team-photo" src="images/teams/falcons.png" alt="Atlanta Falcons">
-              <div class="team-name">
-                <h4>Atlanta Falcons</h4>
-              </div>
-            </div>
-            <!-- Ends the team -->
-            </div>
-
-            <!-- Ends team line 1 -->
-
-            <!-- Begins team line 2 -->
-            <div id="teams-line-2">
-
-            <!-- Begins the team -->
-              <div class="team">
-                <img class="team-photo" src="images/teams/eagles.png" alt="Philadelphia Eagles">
-                <div class="team-name">
-                  <h4>Philadelphia Eagles</h4>
-                </div>
-              </div>
-            <!-- Ends the team -->
-
-            <!-- Begins the team -->
-              <div class="team">
-                <img class="team-photo" src="images/teams/redskins.png" alt="Washington Redskins">
-                <div class="team-name">
-                  <h4>Washington Redskins</h4>
-                </div>
-              </div>
-            <!-- Ends the team -->
-
-            <!-- Begins the team -->
-              <div class="team">
-                <img class="team-photo" src="images/teams/texans.png" alt="Houston Texans">
-                <div class="team-name">
-                  <h4>Houston Texans</h4>
-                </div>
-              </div>
-            <!-- Ends the team -->
-
-            <!-- Begins the team -->
-              <div class="team">
-                <img class="team-photo" src="images/teams/colts.png" alt="Indianapolis Colts">
-                <div class="team-name">
-                  <h4>Indianapolis Colts</h4>
-                </div>
-              </div>
-            <!-- Ends the team -->
-
-            </div>
-            <!-- Ends team line 2 -->
-
-          </div>
+      <article class="location">
+        <div class="location-title">
+          <h2>Home Games</h2>
         </div>
-        <!-- Ends the home games -->
 
-        <!-- Begins the away games -->
-        <div class="location" style="border-top: solid; border-top-color: #a5acaf; border-top-width: 10px;">
-          <div class="location-title">
-            <h2>Away Games</h2>
+        <div class="games">
+
+          <!-- DELETE -->
+          <div class="team-line">
+
+            <div class="team">
+              <h4>Arizona Cardinals</h4>
+              <img class="team-photo" src="images/teams/cardinals.png" alt="Arizona Cardinals">
+            </div>
+
+            <div class="team">
+              <h4>San Francisco 49ers</h4>
+              <img class="team-photo" src="images/teams/49ers.png" alt="San Francisco 49ers">
+            </div>
+
+            <div class="team">
+              <h4>Los Angeles Rams</h4>
+              <img class="team-photo" src="images/teams/rams.png" alt="Los Angeles Rams">
+            </div>
+
+            <div class="team">
+              <h4>Atlanta Falcons</h4>
+              <img class="team-photo" src="images/teams/falcons.png" alt="Atlanta Falcons">
+            </div>
           </div>
-          <div class="games">
 
-            <!-- Begins team line 3 -->
-            <div id="teams-line-3">
 
-              <!-- Begins the team -->
-              <div class="team">
-                <img class="team-photo" src="images/teams/cardinals.png" alt="Arizona Cardinals">
-                <div class="team-name">
-                  <h4>Arizona Cardinals</h4>
-              </div>
-              </div>
-              <!-- Ends the team -->
+          <!-- DELETE -->
+          <div class="team-line">
 
-            <!-- Begins the team -->
-              <div class="team">
-                <img class="team-photo" src="images/teams/49ers.png" alt="San Francisco 49ers">
-                <div class="team-name">
-                  <h4>San Francisco 49ers</h4>
-                </div>
-              </div>
-            <!-- Ends the team -->
-
-            <!-- Begins the team -->
-              <div class="team">
-                <img class="team-photo" src="images/teams/rams.png" alt="Los Angeles Rams">
-                <div class="team-name">
-                  <h4>Los Angeles Rams</h4>
-                </div>
-              </div>
-            <!-- Ends the team -->
-
-            <!-- Begins the team -->
-              <div class="team">
-                <img class="team-photo" src="images/teams/cowboys.png" alt="Dallas Cowboys">
-                <div class="team-name">
-                  <h4>Dallas Cowboys</h4>
-                </div>
-              </div>
-            <!-- Ends the team -->
-
+            <div class="team">
+              <h4>Philadelphia Eagles</h4>
+              <img class="team-photo" src="images/teams/eagles.png" alt="Philadelphia Eagles">
             </div>
-            <!-- Ends team line 3 -->
 
-            <!-- Begins team line 4 -->
-            <div id="teams-line-4">
-
-            <!-- Begins the team -->
-              <div class="team">
-                <img class="team-photo" src="images/teams/packers.png" alt="Green Bay Packers">
-                <div class="team-name">
-                  <h4>Green Bay Packers</h4>
-                </div>
-              </div>
-            <!-- Ends the team -->
-
-            <!-- Begins the team -->
-              <div class="team">
-                <img class="team-photo" src="images/teams/giants.png" alt="New York Giants">
-                <div class="team-name">
-                  <h4>New York Giants</h4>
-                </div>
-              </div>
-            <!-- Ends the team -->
-
-            <!-- Begins the team -->
-              <div class="team">
-                <img class="team-photo" src="images/teams/titans.png" alt="Tennessee Titans">
-                <div class="team-name">
-                  <h4>Tennessee Titans</h4>
-                </div>
-              </div>
-            <!-- Ends the team -->
-
-            <!-- Begins the team -->
-              <div class="team">
-                <img class="team-photo" src="images/teams/jaguars.png" alt="Jacksonville Jaguars">
-                <div class="team-name">
-                  <h4>Jacksonville Jaguars</h4>
-                </div>
-              </div>
-            <!-- Ends the team -->
-
+            <div class="team">
+              <h4>Washington Redskins</h4>
+              <img class="team-photo" src="images/teams/redskins.png" alt="Washington Redskins">
             </div>
-            <!-- Ends team line 4 -->
+
+            <div class="team">
+              <h4>Houston Texans</h4>
+              <img class="team-photo" src="images/teams/texans.png" alt="Houston Texans">
+            </div>
+
+            <div class="team">
+              <h4>Indianapolis Colts</h4>
+              <img class="team-photo" src="images/teams/colts.png" alt="Indianapolis Colts">
+            </div>
 
           </div>
-          <!-- Ends the away games -->
 
-      </div>
-    <!-- Ends the schedule -->
+        </div>
+      </article>
 
-      </div>
-    </div>
-  </div>
-    <!-- Ends the content -->
-  </body>
-  </html>
+      <article class="location">
+        <div class="location-title">
+          <h2>Away Games</h2>
+        </div>
+
+        <div class="games">
+
+          <!-- DELETE -->
+          <div class="team-line">
+
+            <div class="team">
+              <h4>Arizona Cardinals</h4>
+              <img class="team-photo" src="images/teams/cardinals.png" alt="Arizona Cardinals">
+            </div>
+
+            <div class="team">
+              <h4>San Francisco 49ers</h4>
+              <img class="team-photo" src="images/teams/49ers.png" alt="San Francisco 49ers">
+            </div>
+
+            <div class="team">
+              <h4>Los Angeles Rams</h4>
+              <img class="team-photo" src="images/teams/rams.png" alt="Los Angeles Rams">
+            </div>
+
+            <div class="team">
+              <h4>Dallas Cowboys</h4>
+              <img class="team-photo" src="images/teams/cowboys.png" alt="Dallas Cowboys">
+            </div>
+
+          </div>
+
+
+          <!-- DELETE -->
+          <div class="team-line">
+
+            <div class="team">
+              <h4>Green Bay Packers</h4>
+              <img class="team-photo" src="images/teams/packers.png" alt="Green Bay Packers">
+            </div>
+
+            <div class="team">
+              <h4>New York Giants</h4>
+              <img class="team-photo" src="images/teams/giants.png" alt="New York Giants">
+            </div>
+
+            <div class="team">
+              <h4>Tennessee Titans</h4>
+              <img class="team-photo" src="images/teams/titans.png" alt="Tennessee Titans">
+            </div>
+
+            <div class="team">
+              <h4>Jacksonville Jaguars</h4>
+              <img class="team-photo" src="images/teams/jaguars.png" alt="Jacksonville Jaguars">
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </section>
+  </main>
+</body>
+
+</html>
