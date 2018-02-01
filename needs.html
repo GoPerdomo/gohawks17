@@ -1,91 +1,103 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Go Hawks '17</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-  <!-- Begins the top of the page -->
-  <div id="page-top">
-
-    <!-- Begins the banner -->
+  <header>
     <div>
-      <a href="index.html"><img src="images/hawksbanner.jpg" alt="Go Hawks '17" id="banner"></a>
+      <a href="index.html">
+        <img src="images/hawksbanner.jpg" alt="Go Hawks '17" class="banner">
+      </a>
     </div>
-    <!-- Ends the banner -->
-
-    <!-- Begins the menu -->
-    <span id="menu">
-      <span class="menu"><a href="index.html"><img src="images/index.jpg" alt="Overview" class="menu-photo"></a></span>
-      <span class="menu"><a href="players.html"><img src="images/players.jpg" alt="Main Players" class="menu-photo"></a></span>
-      <span class="menu"><a href="needs.html"><img src="images/needs.jpg" alt="Team Needs" class="menu-photo"></a></span>
-      <span class="menu"><a href="schedule.html"><img src="images/schedule.jpg" alt="Schedule" class="menu-photo"></a></span>
-      <span class="menu"><a href="about.html"><img src="images/about.jpg" alt="About" class="menu-photo"></a></span>
-    </span>
-    <!-- Ends the menu -->
-  </div>
-  <!-- Ends the top -->
-
-  <!-- Begins the content -->
-  <div id="content">
-    <h1>Team Needs</h1>
-    <div class="inner-content">
-
-    <!-- Begins the team needs -->
-      <div id="needs">
-
-        <!-- Begins Needs Card -->
-        <div class="needs-card">
-          <div class="needs-title">
-            <h2>Offensive Line</h2>
-          </div>
-          <div class="needs-text">
-            <p>
-              The Offensive Line has changed completely from the one that has helped the Seahawks win the Super Bowl XLVIII. Once the NFL's most well-paid, it's now composed mostly by rookies, making it now the league's cheapest and most inexperienced OL. Even though Center Justin Britt begun showing signs of a bright future the rest of the group, which includes even a basketball-turned-footbal player, has still to prove its value.
-              <br><br>
-              <b>Free Agency Update:</b> The Seattle Seahawks signed Offensive Guards Luke Joeckel (former <em>Jacksonville Jaguars</em>) and Oday Aboushi (former <em>Houston Texans</em>).
-            </p>
-          </div>
-        </div>
-        <!-- Ends Needs Card -->
-
-        <!-- Begins Needs Card -->
-        <div class="needs-card">
-          <div class="needs-title">
-            <h2>Wide Receiver</h2>
-          </div>
-          <div class="needs-text">
-            <p>
-              Even with great receivers like the efficient Doug Baldwin and the speedster Tyler Lockett, the Seahawks still feels the need for adding a big, agressive target for Russell Wilson.
-            </p>
-          </div>
-        </div>
-        <!-- Ends Needs Card -->
-
-        <!-- Begins Needs Card -->
-        <div class="needs-card" style="border-bottom-width: 0px;">
-          <div class="needs-title">
-            <h2>Running Back</h2>
-          </div>
-          <div class="needs-text">
-            <p>
-              Now that's an unfortunate thread. The Seattle Seahawks had until 2015 one of the best player on its backfield, Marshawn Lynch, aka Beast Mode. After his retirement the team has counted with Thomas Rawls and C.J. Prosise, that even though both had already great moments, they are still very young and inexperient.
-              <br><br>
-              <b>Free Agency Update:</b> The Seattle Seahawks signed Running Back Eddie Lacy (former <em>Green Bay Packers</em>). Lacy had a fantastic career with the Packers, but on the last couple years he gained a lot of weight and has shown difficulties to go back to his old form, harming his performance. The Seahawks signed him on a 1-year contract, including 7 different weight targets in which they will pay $55,000 bonus for each one that he reaches. In case he makes it and the team gets the Offensive Line straight, we can expect a great time in Seattle.
-            </p>
-          </div>
-        </div>
-        <!-- Ends Needs Card -->
-
+    <nav class="menu">
+      <div>
+        <a href="index.html">
+          <button>Overview</button>
+        </a>
       </div>
-    <!-- Ends the team needs -->
+      <div>
+        <a href="players.html">
+          <button>Key Players</button>
+        </a>
+      </div>
+      <div>
+        <a href="needs.html">
+          <button>Team Needs</button>
+        </a>
+      </div>
+      <div>
+        <a href="schedule.html">
+          <button>Schedule</button>
+        </a>
+      </div>
+      <div>
+        <a href="about.html">
+          <button>About</button>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1 class="title">Key Players</h1>
+    <section class="content">
 
-    </div>
-  </div>
-    <!-- Ends the content -->
+      <article class="needs-card">
+        <div class="needs-title">
+          <h2>Offensive Line</h2>
+        </div>
+        <div class="needs-text">
+          <p>
+            The Offensive Line has changed completely from the one that has helped the Seahawks win the Super Bowl XLVIII. Once the NFL's
+            most well-paid, it's now composed mostly by rookies, making it now the league's cheapest and most inexperienced
+            OL. Even though Center Justin Britt begun showing signs of a bright future the rest of the group, which includes
+            even a basketball-turned-footbal player, has still to prove its value.
+            <br>
+            <br> Free Agency Update: The Seattle Seahawks signed Offensive Guards Luke Joeckel (former Jacksonville Jaguars)
+            and Oday Aboushi (former Houston Texans).
+          </p>
+        </div>
+      </article>
 
-  </body>
-  </html>
+      <article class="needs-card">
+        <div class="needs-title">
+          <h2>Wide Receiver</h2>
+        </div>
+        <div class="needs-text">
+          <p>
+            Even with great receivers like the efficient Doug Baldwin and the speedster Tyler Lockett, the Seahawks still feels the need
+            for adding a big, agressive target for Russell Wilson.
+          </p>
+        </div>
+      </article>
+
+      <article class="needs-card" style="border-bottom-width: 0px;">
+        <div class="needs-title">
+          <h2>Running Back</h2>
+        </div>
+        <div class="needs-text">
+          <p>
+            Now that's an unfortunate thread. The Seattle Seahawks had until 2015 one of the best player on its backfield, Marshawn Lynch,
+            aka Beast Mode. After his retirement the team has counted with Thomas Rawls and C.J. Prosise, that even though
+            both had already great moments, they are still very young and inexperient.
+            <br>
+            <br> Free Agency Update: The Seattle Seahawks signed Running Back Eddie Lacy (former Green Bay Packers). Lacy had
+            a fantastic career with the Packers, but on the last couple years he gained a lot of weight and has shown difficulties
+            to go back to his old form, harming his performance. The Seahawks signed him on a 1-year contract, including
+            7 different weight targets in which they will pay $55,000 bonus for each one that he reaches. In case he makes
+            it and the team gets the Offensive Line straight, we can expect a great time in Seattle.
+          </p>
+        </div>
+      </article>
+
+    </section>
+  </main>
+</body>
+
+</html>

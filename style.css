@@ -143,10 +143,6 @@ main {
 
 /* Begins the Needs */
 
-#needs {
-  display: block;
-}
-
 .needs-card {
   display: block;
   border-bottom: solid;
