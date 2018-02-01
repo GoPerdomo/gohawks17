@@ -408,7 +408,6 @@ p {
   padding-top: 0.5%;
   font-size: 17px; }
 
-/* Begins the content */
 main {
   margin-left: 2%;
   margin-right: 2%; }
@@ -423,8 +422,27 @@ main {
   border-width: 10px;
   border-radius: 15px; }
 
-/* Ends the content */
-/* Begins the Overview */
+.banner {
+  display: block;
+  margin: auto;
+  width: 1300px;
+  height: 320px;
+  border: solid;
+  border-color: white;
+  border-width: 10px;
+  box-shadow: 3px -3px black, -3px 3px black, 3px 3px black, -3px -3px black; }
+
+.menu {
+  display: flex;
+  margin-top: 3px;
+  height: 60px;
+  width: auto;
+  min-width: 1283px;
+  margin-left: 1.85%;
+  margin-right: 1.85%;
+  background-color: #69BE28;
+  box-shadow: 3px -3px black, -3px 3px black, 3px 3px black, -3px -3px black; }
+
 .overview {
   display: flex;
   background-color: #69BE28;
@@ -438,8 +456,6 @@ main {
   border-width: 5px;
   padding: 10px; }
 
-/* Begins the Overview */
-/* Begins the Players */
 .player {
   display: flex;
   min-width: 1180px;
@@ -475,8 +491,6 @@ main {
   border-top: 0px;
   border-left: 0px; }
 
-/* Ends the Players */
-/* Begins the Needs */
 .needs-card {
   display: block;
   border-bottom: solid;
@@ -496,8 +510,6 @@ main {
   border-color: #002244;
   border-width: 5px; }
 
-/* Ends the Needs */
-/* Begins the Schedule */
 .location-title {
   background-color: #69BE28;
   border: solid;
@@ -525,8 +537,6 @@ main {
 .team-photo {
   height: 100px; }
 
-/* Ends the Schedule */
-/* Begins the About */
 .about {
   border: solid;
   border-color: #002244;
@@ -535,27 +545,5 @@ main {
 .about-text {
   background-color: #69BE28;
   padding: 10px; }
-
-/* Ends the About */
-.banner {
-  display: block;
-  margin: auto;
-  width: 1300px;
-  height: 320px;
-  border: solid;
-  border-color: white;
-  border-width: 10px;
-  box-shadow: 3px -3px black, -3px 3px black, 3px 3px black, -3px -3px black; }
-
-.menu {
-  display: flex;
-  margin-top: 3px;
-  height: 60px;
-  width: auto;
-  min-width: 1283px;
-  margin-left: 1.85%;
-  margin-right: 1.85%;
-  background-color: #69BE28;
-  box-shadow: 3px -3px black, -3px 3px black, 3px 3px black, -3px -3px black; }
 
 /*# sourceMappingURL=main.css.map */

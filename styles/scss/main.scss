@@ -10,3 +10,10 @@
 
 // Component Styles
 @import 'components/navigation';
+
+// Pages Styles
+@import 'pages/overview',
+        'pages/players',
+        'pages/needs',
+        'pages/schedule',
+        'pages/about';

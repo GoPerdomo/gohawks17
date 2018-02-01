@@ -1,0 +1,21 @@
+.needs-card {
+  display: block;
+  border-bottom: solid;
+  border-bottom-width: 10px;
+  border-color: $color-accent;
+}
+
+.needs-title {
+  background-color: $color-primary;
+  border: solid;
+  border-color: $color-secondary;
+  border-width: 5px;
+  border-bottom-width: 1px;
+}
+
+.needs-text {
+  background-color: $color-primary;
+  border: solid;
+  border-color: $color-secondary;
+  border-width: 5px;
+}
