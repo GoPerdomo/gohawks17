@@ -185,19 +185,7 @@ main {
   border-top-width: 0px;
 }
 
-#teams-line-1 {
-  display: flex;
-}
-
-#teams-line-2 {
-  display: flex;
-}
-
-#teams-line-3 {
-  display: flex;
-}
-
-#teams-line-4 {
+.team-line {
   display: flex;
 }
 
