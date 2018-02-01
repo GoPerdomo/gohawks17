@@ -1,6 +1,6 @@
 body {
-  background-color: $color-secondary;
   min-height: 100vh;
+  background-color: $color-secondary;
 }
 
 img {
@@ -13,10 +13,19 @@ h1 {
   text-shadow: $text-shadow;
 }
 
+p {
+  margin: 0;
+}
+
 main {
+  margin-top: 20px;
   @include center(90%);
 }
 
 .content {
-  @include border($radius: 15px);
+  margin-bottom: $margin-bottom;
+  @include border($radius: 10px);
+
+  // >:nth-child(2) {
+  // }
 }

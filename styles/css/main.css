@@ -390,8 +390,8 @@ template {
   display: none; }
 
 body {
-  background-color: #002244;
-  min-height: 100vh; }
+  min-height: 100vh;
+  background-color: #002244; }
 
 img {
   display: block;
@@ -401,19 +401,25 @@ h1 {
   color: #69BE28;
   text-shadow: -2px 0px black, 0px -2px black, -1px 0px black, 0px -1px black, 1px 0px black, 0px 1px black, 2px 0px black, 0px 2px black; }
 
+p {
+  margin: 0; }
+
 main {
+  margin-top: 20px;
   width: 90%;
   margin: auto;
-  max-width: 1400px; }
+  max-width: 1300px; }
 
 .content {
-  border: 10px solid #A5ACAF;
-  border-radius: 15px; }
+  margin-bottom: 50px;
+  border: 5px solid #A5ACAF;
+  border-radius: 10px; }
 
 header {
   width: 90%;
   margin: auto;
-  max-width: 1400px; }
+  max-width: 1300px;
+  margin-bottom: 50px; }
 
 .banner {
   border: 10px solid white; }
@@ -437,16 +443,12 @@ header {
 
 .overview {
   display: flex;
-  background-color: #69BE28;
-  border: solid;
-  border-color: #002244;
-  border-width: 5px; }
-
-.overview-text {
-  border-right: solid;
-  border-color: #002244;
-  border-width: 5px;
-  padding: 10px; }
+  border: 5px solid #002244; }
+  .overview-text {
+    width: 70%;
+    background-color: #69BE28;
+    padding: 1em;
+    margin-right: 5px; }
 
 .player {
   display: flex;

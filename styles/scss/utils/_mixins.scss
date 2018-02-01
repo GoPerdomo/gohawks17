@@ -6,7 +6,15 @@
 }
 
 // Borders
-@mixin border($px: 10px, $radius: 0) {
-  border: $px solid $color-accent;
+@mixin border($px: $border, $border-color: $color-accent, $radius: null) {
+  border: $px solid $border-color;
   border-radius: $radius;
+}
+
+// Flex Container
+@mixin flex ($disp: flex, $dir: null, $wrap: null, $just: null) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
 }

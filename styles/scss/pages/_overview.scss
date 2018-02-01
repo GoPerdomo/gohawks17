@@ -1,14 +1,11 @@
 .overview {
-  display: flex;
-  background-color: $color-primary;
-  border: solid;
-  border-color: $color-secondary;
-  border-width: 5px;
-}
-
-.overview-text {
-  border-right: solid;
-  border-color: $color-secondary;
-  border-width: 5px;
-  padding: 10px;
+  @include flex;
+  @include border($border-color: $color-secondary);
+  
+  &-text {
+    width: 70%;
+    background-color: $color-primary;
+    padding: $text-padding;
+    margin-right: $border;
+  }
 }
