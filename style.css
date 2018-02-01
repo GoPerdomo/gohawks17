@@ -205,13 +205,13 @@ main {
 
 /* Begins the About */
 
-#about {
+.about {
   border: solid;
   border-color: #002244;
   border-width: 5px;
 }
 
-#about-text {
+.about-text {
   background-color: #69BE28;
   padding: 10px;
 }
