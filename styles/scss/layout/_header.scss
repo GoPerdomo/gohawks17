@@ -1,10 +1,7 @@
+header {
+  @include center(90%);
+}
+
 .banner {
-  display: block;
-  margin: auto;
-  width: 1300px;
-  height: 320px;
-  border: solid;
-  border-color: white;
-  border-width: 10px;
-  box-shadow: 3px -3px black, -3px 3px black, 3px 3px black, -3px -3px black;
+  border: 10px solid white;
 }

@@ -1,0 +1,11 @@
+// Center containers
+@mixin center($w) {
+  width: $w;
+  margin: auto;
+  max-width: $max-width;
+}
+
+// Borders
+@mixin border {
+  border: 10px solid $color-accent;
+}
