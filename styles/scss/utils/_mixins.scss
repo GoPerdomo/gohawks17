@@ -6,6 +6,7 @@
 }
 
 // Borders
-@mixin border {
-  border: 10px solid $color-accent;
+@mixin border($px: 10px, $radius: 0) {
+  border: $px solid $color-accent;
+  border-radius: $radius;
 }
