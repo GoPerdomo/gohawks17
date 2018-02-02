@@ -1,40 +1,13 @@
 .player {
-  display: flex;
-  min-width: 1180px;
-  border-bottom: solid;
-  border-color: $color-accent;
-  border-width: 10px;
-}
-
-.player-photo {
-  border: solid;
-  background-color: $color-primary;
-  border-color: $color-secondary;
-  border-width: 5px;
-}
-
-.player-photo img {
-  display: block;
-  height: 300px;
-  width: 300px;
-}
-
-.player-name {
-  background-color: $color-primary;
-  ;
-  border: solid;
-  border-color: $color-secondary;
-  border-left: 0px;
-  border-width: 5px;
-  border-bottom-width: 1px;
-}
-
-.player-description {
-  background-color: $color-primary;
-  min-height: 259px;
-  border: solid;
-  border-color: $color-secondary;
-  border-width: 5px;
-  border-top: 0px;
-  border-left: 0px;
+  @include flex($wrap: wrap);
+  
+  &-info {
+    @include flex($dir: column);
+    flex: 1;
+    padding: $text-padding;
+  }
+  
+  &-description {
+    flex: 1;
+  }
 }

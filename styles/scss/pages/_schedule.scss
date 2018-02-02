@@ -1,31 +1,24 @@
-.location-title {
-  background-color: $color-primary;
-  border: solid;
-  border-width: 5px;
-  border-color: $color-secondary;
-}
+.location {
+  padding: $text-padding;
+  
+  .games {
+    @include flex($wrap: wrap);
+    @include list;
+  }
+  
+  .team {
+    @include flex($dir: column-reverse);
+    align-items: center;
+    width: 25%;
+    padding: 20px 0;
+  }
+  
+  p {
+    padding: $text-padding;
+    font-weight: bold;
+  }
 
-.games {
-  background-color: $color-primary;
-  height: 400px;
-  border: solid;
-  border-width: 5px;
-  border-color: $color-secondary;
-  border-top-width: 0px;
-}
-
-.team-line {
-  display: flex;
-}
-
-.team {
-  display: block;
-  text-align: center;
-  width: 500px;
-  height: 125px;
-  padding-top: 50px;
-}
-
-.team-photo {
-  height: 100px;
+  img {
+    height: 100px;
+  }
 }

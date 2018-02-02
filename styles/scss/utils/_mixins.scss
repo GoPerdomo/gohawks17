@@ -1,0 +1,27 @@
+// Center containers
+@mixin center($w) {
+  width: $w;
+  margin: auto;
+  max-width: $max-width;
+}
+
+// Borders
+@mixin border($px: $border, $border-color: $color-accent, $radius: null) {
+  border: $px solid $border-color;
+  border-radius: $radius;
+}
+
+// Flex Container
+@mixin flex($dir: null, $wrap: null, $just: null) {
+  display: flex;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
+}
+
+// Unordered List
+@mixin list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
