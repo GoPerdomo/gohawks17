@@ -419,7 +419,8 @@ main {
   border: 5px solid #A5ACAF;
   border-radius: 10px; }
   .content > article {
-    background-color: #69BE28; }
+    background-color: #69BE28;
+    border: 5px solid #A5ACAF; }
 
 header {
   width: 90%;
@@ -449,15 +450,13 @@ header {
     color: #002244; }
 
 .overview {
-  display: flex;
-  border: 5px solid #A5ACAF; }
+  display: flex; }
   .overview-text {
     width: 70%;
     background-color: #69BE28;
     padding: 1em; }
 
 .player {
-  border: 5px solid #A5ACAF;
   display: flex;
   flex-wrap: wrap; }
   .player-info {
@@ -468,14 +467,12 @@ header {
   .player-description {
     flex: 1; }
 
-.needs-card {
-  border: 5px solid #A5ACAF;
+.needs {
   display: flex;
   flex-direction: column;
   padding: 1em; }
 
 .location {
-  border: 5px solid #A5ACAF;
   padding: 1em; }
   .location .games {
     display: flex;
@@ -496,12 +493,6 @@ header {
     height: 100px; }
 
 .about {
-  border: solid;
-  border-color: #002244;
-  border-width: 5px; }
-
-.about-text {
-  background-color: #69BE28;
-  padding: 10px; }
+  padding: 1em; }
 
 /*# sourceMappingURL=main.css.map */

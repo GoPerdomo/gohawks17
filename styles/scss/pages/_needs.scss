@@ -1,5 +1,4 @@
-.needs-card {
-  @include border();
+.needs {
   @include flex($dir: column);
   padding: $text-padding;
 }

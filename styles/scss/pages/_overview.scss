@@ -1,6 +1,5 @@
 .overview {
   @include flex();
-  @include border();
   
   &-text {
     width: 70%;

@@ -32,5 +32,6 @@ main {
   @include border($radius: 10px);
   > article {
     background-color: $color-primary;
+    @include border;
   }
 }

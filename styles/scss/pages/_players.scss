@@ -1,5 +1,4 @@
 .player {
-  @include border();
   @include flex($wrap: wrap);
   
   &-info {
