@@ -1,6 +1,5 @@
 body {
   min-height: 100vh;
-  font-size: $font-size;
   background-color: $color-secondary;
 }
 
@@ -14,11 +13,12 @@ h1 {
   text-shadow: $text-shadow;
 }
 
-h2 {
+h2, h4 {
   margin-top: 0;
 }
 
 p {
+  font-size: $font-size;
   margin: 0;
 }
 

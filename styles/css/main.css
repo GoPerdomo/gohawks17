@@ -391,7 +391,6 @@ template {
 
 body {
   min-height: 100vh;
-  font-size: 1.1em;
   background-color: #002244; }
 
 img {
@@ -402,10 +401,11 @@ h1 {
   color: #69BE28;
   text-shadow: -2px 0px black, 0px -2px black, -1px 0px black, 0px -1px black, 1px 0px black, 0px 1px black, 2px 0px black, 0px 2px black; }
 
-h2 {
+h2, h4 {
   margin-top: 0; }
 
 p {
+  font-size: 1.1em;
   margin: 0; }
 
 main {
@@ -436,12 +436,13 @@ header {
   height: 60px;
   background-color: #69BE28; }
   .nav-bar ul {
-    width: 100%;
     padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    list-style: none; }
+    justify-content: space-around; }
   .nav-bar a {
     font-size: 1.5em;
     text-decoration: none;
@@ -473,32 +474,26 @@ header {
   flex-direction: column;
   padding: 1em; }
 
-.location-title {
-  background-color: #69BE28;
-  border: solid;
-  border-width: 5px;
-  border-color: #002244; }
-
-.games {
-  background-color: #69BE28;
-  height: 400px;
-  border: solid;
-  border-width: 5px;
-  border-color: #002244;
-  border-top-width: 0px; }
-
-.team-line {
-  display: flex; }
-
-.team {
-  display: block;
-  text-align: center;
-  width: 500px;
-  height: 125px;
-  padding-top: 50px; }
-
-.team-photo {
-  height: 100px; }
+.location {
+  border: 5px solid #A5ACAF;
+  padding: 1em; }
+  .location .games {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+  .location .team {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 25%;
+    padding: 20px 0; }
+  .location p {
+    padding: 1em;
+    font-weight: bold; }
+  .location img {
+    height: 100px; }
 
 .about {
   border: solid;

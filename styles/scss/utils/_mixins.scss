@@ -18,3 +18,10 @@
   flex-wrap: $wrap;
   justify-content: $just;
 }
+
+// Unordered List
+@mixin list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
