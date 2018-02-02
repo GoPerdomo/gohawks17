@@ -1,11 +1,10 @@
 .overview {
-  @include flex;
-  @include border($border-color: $color-secondary);
+  @include flex();
+  @include border();
   
   &-text {
     width: 70%;
     background-color: $color-primary;
     padding: $text-padding;
-    margin-right: $border;
   }
 }

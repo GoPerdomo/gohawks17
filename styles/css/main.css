@@ -443,47 +443,26 @@ header {
 
 .overview {
   display: flex;
-  border: 5px solid #002244; }
+  border: 5px solid #A5ACAF; }
   .overview-text {
     width: 70%;
     background-color: #69BE28;
-    padding: 1em;
-    margin-right: 5px; }
+    padding: 1em; }
 
 .player {
+  border: 5px solid #A5ACAF;
   display: flex;
-  min-width: 1180px;
-  border-bottom: solid;
-  border-color: #A5ACAF;
-  border-width: 10px; }
-
-.player-photo {
-  border: solid;
-  background-color: #69BE28;
-  border-color: #002244;
-  border-width: 5px; }
-
-.player-photo img {
-  display: block;
-  height: 300px;
-  width: 300px; }
-
-.player-name {
-  background-color: #69BE28;
-  border: solid;
-  border-color: #002244;
-  border-left: 0px;
-  border-width: 5px;
-  border-bottom-width: 1px; }
-
-.player-description {
-  background-color: #69BE28;
-  min-height: 259px;
-  border: solid;
-  border-color: #002244;
-  border-width: 5px;
-  border-top: 0px;
-  border-left: 0px; }
+  flex-wrap: wrap; }
+  .player-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1em;
+    background-color: #69BE28; }
+  .player-description {
+    flex: 1; }
+  .player h3 {
+    margin-top: 0; }
 
 .needs-card {
   display: block;

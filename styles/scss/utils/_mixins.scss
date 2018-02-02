@@ -12,8 +12,8 @@
 }
 
 // Flex Container
-@mixin flex ($disp: flex, $dir: null, $wrap: null, $just: null) {
-  display: $disp;
+@mixin flex($dir: null, $wrap: null, $just: null) {
+  display: flex;
   flex-direction: $dir;
   flex-wrap: $wrap;
   justify-content: $just;
