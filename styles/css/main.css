@@ -391,6 +391,7 @@ template {
 
 body {
   min-height: 100vh;
+  font-size: 1.1em;
   background-color: #002244; }
 
 img {
@@ -400,6 +401,9 @@ img {
 h1 {
   color: #69BE28;
   text-shadow: -2px 0px black, 0px -2px black, -1px 0px black, 0px -1px black, 1px 0px black, 0px 1px black, 2px 0px black, 0px 2px black; }
+
+h2 {
+  margin-top: 0; }
 
 p {
   margin: 0; }
@@ -414,6 +418,8 @@ main {
   margin-bottom: 50px;
   border: 5px solid #A5ACAF;
   border-radius: 10px; }
+  .content > article {
+    background-color: #69BE28; }
 
 header {
   width: 90%;
@@ -457,31 +463,15 @@ header {
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: 1em;
-    background-color: #69BE28; }
+    padding: 1em; }
   .player-description {
     flex: 1; }
-  .player h3 {
-    margin-top: 0; }
 
 .needs-card {
-  display: block;
-  border-bottom: solid;
-  border-bottom-width: 10px;
-  border-color: #A5ACAF; }
-
-.needs-title {
-  background-color: #69BE28;
-  border: solid;
-  border-color: #002244;
-  border-width: 5px;
-  border-bottom-width: 1px; }
-
-.needs-text {
-  background-color: #69BE28;
-  border: solid;
-  border-color: #002244;
-  border-width: 5px; }
+  border: 5px solid #A5ACAF;
+  display: flex;
+  flex-direction: column;
+  padding: 1em; }
 
 .location-title {
   background-color: #69BE28;

@@ -6,14 +6,9 @@
     @include flex($dir: column);
     flex: 1;
     padding: $text-padding;
-    background-color: $color-primary;
   }
   
   &-description {
     flex: 1;
-  }
-
-  h3 {
-    margin-top: 0;
   }
 }
