@@ -1,6 +1,7 @@
 body {
   min-height: 100vh;
   background-color: $color-secondary;
+  font-family: $main-font;
 }
 
 img {
@@ -18,20 +19,7 @@ h2, h4 {
 }
 
 p {
+  font-family: $text-font;
   font-size: $font-size;
   margin: 0;
-}
-
-main {
-  margin-top: 20px;
-  @include center(90%);
-}
-
-.content {
-  margin-bottom: $margin-bottom;
-  @include border($radius: 10px);
-  > article {
-    background-color: $color-primary;
-    @include border;
-  }
 }

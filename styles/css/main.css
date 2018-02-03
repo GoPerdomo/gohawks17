@@ -391,7 +391,8 @@ template {
 
 body {
   min-height: 100vh;
-  background-color: #002244; }
+  background-color: #002244;
+  font-family: "Oswald", "Arial Narrow", "Arial", sans-serif; }
 
 img {
   display: block;
@@ -405,7 +406,8 @@ h2, h4 {
   margin-top: 0; }
 
 p {
-  font-size: 1.1em;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
   margin: 0; }
 
 main {
@@ -427,9 +429,6 @@ header {
   margin: auto;
   max-width: 1300px;
   margin-bottom: 50px; }
-
-.banner {
-  border: 10px solid white; }
 
 .nav-bar {
   margin: auto;
