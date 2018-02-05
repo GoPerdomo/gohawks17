@@ -451,16 +451,10 @@ header {
 .overview-img {
   order: -1; }
 
-.player {
-  display: flex;
-  flex-wrap: wrap; }
-  .player-info {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    padding: 1em; }
-  .player-description {
-    flex: 1; }
+.player-info {
+  order: 1; }
+.player img {
+  width: 400px; }
 
 .needs {
   display: flex;
