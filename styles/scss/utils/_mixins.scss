@@ -6,8 +6,8 @@
 }
 
 // Borders
-@mixin border($px: $border, $border-color: $color-accent, $radius: null) {
-  border: $px solid $border-color;
+@mixin border($radius: null) {
+  border: $border solid $border-color;
   border-radius: $radius;
 }
 

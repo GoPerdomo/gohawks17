@@ -1,13 +1,12 @@
 main {
   margin-top: 20px;
-  @include center(90%);
 }
 
 .content {
   margin-bottom: $margin-bottom;
-  @include border($radius: 10px);
   > article {
+    @include flex($dir: column);
     background-color: $color-primary;
-    @include border;
+    padding: $text-padding;
   }
 }

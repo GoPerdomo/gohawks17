@@ -12,14 +12,19 @@ img {
 h1 {
   color: $color-primary;
   text-shadow: $text-shadow;
+  padding: 0 $header-padding;
 }
 
 h2, h4 {
+  color: $color-secondary;
   margin-top: 0;
 }
 
 p {
   font-family: $text-font;
-  font-size: $font-size;
-  margin: 0;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
 }

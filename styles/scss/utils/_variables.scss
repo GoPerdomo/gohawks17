@@ -1,13 +1,15 @@
 // Colors
-$color-primary: #69BE28;
+$color-primary: #f2f2f2;
 $color-secondary: #002244;
-$color-accent: #A5ACAF;
+$color-accent: #8a9396;
+$border-color: $color-accent;
 
 // Text
 $font-size: 1em;
 $main-font: 'Oswald', 'Arial Narrow', 'Arial', sans-serif;
 $text-font: 'Open Sans', sans-serif;
 $text-padding: 1em;
+$header-padding: 0.5em;
 $text-shadow: -2px 0px black, 0px -2px black, -1px 0px black, 0px -1px black, 1px 0px black, 0px 1px black, 2px 0px black, 0px 2px black;
 
 // Layout

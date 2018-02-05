@@ -1,9 +1,3 @@
-.overview {
-  @include flex();
-  
-  &-text {
-    width: 70%;
-    background-color: $color-primary;
-    padding: $text-padding;
-  }
+.overview-img {
+  order: -1;
 }
