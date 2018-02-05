@@ -1,6 +1,7 @@
 .player {
   &-info {
     order: 1;
+    padding: $text-padding 0;
   }
 
   img {
