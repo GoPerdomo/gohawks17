@@ -409,6 +409,7 @@ h2, h4 {
 
 p {
   font-family: "Open Sans", sans-serif;
+  margin: 0;
   text-align: justify; }
 
 a {
@@ -448,38 +449,31 @@ header {
     font-size: 1.5em;
     color: white; }
 
+.overview-text {
+  padding: 1em 0; }
 .overview-img {
   order: -1; }
 
 .player-info {
-  order: 1; }
+  order: 1;
+  padding: 1em 0; }
 .player img {
   width: 400px; }
 
-.needs p {
-  margin: 0; }
-
-.location {
-  padding: 1em; }
-  .location .games {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-    list-style: none; }
-  .location .team {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    width: 25%;
-    padding: 20px 0; }
-  .location p {
-    padding: 1em;
-    font-weight: bold; }
-  .location img {
-    height: 100px; }
-
-.about {
-  padding: 1em; }
+.location .games {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+.location .team {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 50%;
+  margin: 2em 0; }
+.location img {
+  height: 100px;
+  padding-bottom: 1em; }
 
 /*# sourceMappingURL=main.css.map */
