@@ -456,10 +456,8 @@ header {
 .player img {
   width: 400px; }
 
-.needs {
-  display: flex;
-  flex-direction: column;
-  padding: 1em; }
+.needs p {
+  margin: 0; }
 
 .location {
   padding: 1em; }

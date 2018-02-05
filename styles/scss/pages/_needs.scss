@@ -1,4 +1,3 @@
-.needs {
-  @include flex($dir: column);
-  padding: $text-padding;
+.needs p {
+  margin: 0;
 }
