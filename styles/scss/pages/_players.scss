@@ -1,4 +1,6 @@
 .player {
+  @include flex ($dir: column);
+  
   &-info {
     order: 1;
     padding: $text-padding 0;

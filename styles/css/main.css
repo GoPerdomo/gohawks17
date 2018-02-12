@@ -400,10 +400,9 @@ img {
 
 h1 {
   color: #f2f2f2;
-  text-shadow: -2px 0px black, 0px -2px black, -1px 0px black, 0px -1px black, 1px 0px black, 0px 1px black, 2px 0px black, 0px 2px black;
-  padding: 0 0.5em; }
+  margin: 0; }
 
-h2, h4 {
+h2, h3, h4 {
   color: #002244;
   margin-top: 0; }
 
@@ -415,19 +414,21 @@ p {
 a {
   text-decoration: none; }
 
-main {
-  margin-top: 20px; }
-
 .content {
-  margin-bottom: 50px; }
+  margin-bottom: 30px; }
+  .content .title {
+    order: -1;
+    font-size: 2em;
+    margin: 0;
+    padding-bottom: 0.5em; }
+  .content h3 {
+    font-size: 1.5em;
+    padding-top: 1em; }
   .content > article {
     display: flex;
     flex-direction: column;
     background-color: #f2f2f2;
     padding: 1em; }
-
-header {
-  margin-bottom: 50px; }
 
 .nav a {
   display: block;
@@ -457,28 +458,59 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-height: 1px;
+  max-height: 0;
   overflow: hidden;
   transition: 1s cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #f2f2f2; }
 .nav-item {
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  border-bottom: 1px solid #f2f2f2; }
+  .nav-item:first-child {
+    border-top: 1px solid #f2f2f2; }
 .nav.is-active .nav-items {
   height: auto;
-  max-height: 30rem;
+  max-height: 20em;
   transition: 2s cubic-bezier(0.4, 0, 0.2, 1); }
+
+.banner {
+  position: relative;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+  .banner h1 {
+    padding: 0;
+    text-shadow: -2px 0px black, 0px -2px black, -1px 0px black, 0px -1px black, 1px 0px black, 0px 1px black, 2px 0px black, 0px 2px black;
+    font-size: 3em; }
+  .banner span {
+    margin: 0;
+    color: #f2f2f2;
+    text-shadow: -2px 0px black, 0px -2px black, -1px 0px black, 0px -1px black, 1px 0px black, 0px 1px black, 2px 0px black, 0px 2px black;
+    font-size: 2em; }
+  .banner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+    background: url("/images/banner.png") 100% 30%/200% no-repeat; }
 
 .overview-text {
   padding: 1em 0; }
 .overview-img {
   order: -1; }
 
-.player-info {
-  order: 1;
-  padding: 1em 0; }
-.player img {
-  width: 400px; }
+.player {
+  display: flex;
+  flex-direction: column; }
+  .player-info {
+    order: 1;
+    padding: 1em 0; }
+  .player img {
+    width: 400px; }
 
 .location .games {
   display: flex;
@@ -521,18 +553,18 @@ header {
     opacity: 0.7; }
 
 .hamburger-box {
-  width: 40px;
-  height: 24px;
+  width: 35px;
+  height: 21px;
   display: inline-block;
   position: relative; }
 
 .hamburger-inner {
   display: block;
   top: 50%;
-  margin-top: -2px; }
+  margin-top: -1.5px; }
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    width: 40px;
-    height: 4px;
+    width: 35px;
+    height: 3px;
     background-color: #fff;
     border-radius: 4px;
     position: absolute;
@@ -543,9 +575,9 @@ header {
     content: "";
     display: block; }
   .hamburger-inner::before {
-    top: -10px; }
+    top: -9px; }
   .hamburger-inner::after {
-    bottom: -10px; }
+    bottom: -9px; }
 
 /*
  * Spin Reverse

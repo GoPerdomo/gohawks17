@@ -7,11 +7,11 @@
         'base/base';
 
 // Layout Styles
-@import 'layout/containers',
-        'layout/header';
+@import 'layout/containers';
 
 // Component Styles
-@import 'components/navigation';
+@import 'components/navigation',
+        'components/banner';
 
 // Pages Styles
 @import 'pages/overview',
