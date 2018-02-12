@@ -11,6 +11,12 @@
   @content;
 }
 
+@mixin outline {
+  &:focus {
+    outline: $outline;
+  }
+}
+
 // Flex Container
 @mixin flex($dir: null, $wrap: null, $just: null) {
   display: flex;

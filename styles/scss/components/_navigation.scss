@@ -1,10 +1,16 @@
 .nav {
 
   a {
+    @include outline;
     display: block;
     padding: .5em;
     font-size: 1.5em;
-    color: white;
+    color: $color-primary;
+    background-color: $color-accent;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 
   &bar {
@@ -12,9 +18,13 @@
     @include flex($dir: column);
     background-color: $color-accent;
 
-    .hamburger-container {
-      display: flex;
-      flex-direction: row-reverse;
+    .hamburger {
+      @include outline;
+      
+      &-container {
+        @include flex($dir: row-reverse);
+        padding: 0.2em;
+      }
     }
   }
 
@@ -26,6 +36,7 @@
     max-height: 1px;
     overflow: hidden;
     transition: 1s $transition-effect;
+    background-color: $color-primary;
   }
 
   &-item {
