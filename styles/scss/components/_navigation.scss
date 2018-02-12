@@ -1,20 +1,44 @@
-.nav-bar {
-  margin: auto;
-  display: flex;
-  height: 60px;
-  background-color: $color-primary;
-  
-  ul {
-    @include list;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  
+.nav {
+
   a {
+    display: block;
+    padding: .5em;
     font-size: 1.5em;
-    text-decoration: none;
-    color: $color-secondary;
+    color: white;
+  }
+
+  &bar {
+    margin: auto;
+    @include flex($dir: column);
+    background-color: $color-accent;
+
+    .hamburger-container {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+
+  &-items {
+    @include list;
+    @include flex($dir: column) {
+      align-items: center;
+    };
+    max-height: 1px;
+    overflow: hidden;
+    transition: 1s $transition-effect;
+  }
+
+  &-item {
+    width: 100%;
+    text-align: center;
+  }
+
+
+  &.is-active {
+    .nav-items {
+      height: auto;
+      max-height: 30rem;
+      transition: 2s $transition-effect;
+    }
   }
 }

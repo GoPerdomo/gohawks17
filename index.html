@@ -13,25 +13,39 @@
 
 <body>
   <header>
-    <nav class="nav-bar">
-      <ul>
-        <li>
-          <a href="/index.html">Overview</a>
-        </li>
-        <li>
-          <a href="/players.html">Key Players</a>
-        </li>
-        <li>
-          <a href="/needs.html">Team Needs</a>
-        </li>
-        <li>
-          <a href="/schedule.html">Schedule</a>
-        </li>
-        <li>
-          <a href="/about.html">About</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="navbar">
+      <div class="hamburger-container">
+        <button class="hamburger hamburger--spin-r" type="button" onclick="toggleHamburger()">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+      <nav class="nav">
+        <ul class="nav-items">
+          <li class="nav-item">
+            <a href="/index.html">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a href="/players.html">Key Players</a>
+          </li>
+          <li class="nav-item">
+            <a href="/needs.html">Team Needs</a>
+          </li>
+          <li class="nav-item">
+            <a href="/schedule.html">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a href="/about.html">About</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="banner">
+      <a href="index.html">
+        <img src="images/hawksbanner.jpg" alt="Go Hawks '17">
+      </a>
+    </div>
   </header>
   <main>
     <section class="content">
@@ -55,6 +69,8 @@
       </article>
     </section>
   </main>
+
+  <script src='scripts/navbar.js' type='application/javascript' charset='utf-8'></script>
 </body>
 
 </html>
