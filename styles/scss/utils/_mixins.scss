@@ -32,3 +32,10 @@
   margin: 0;
   list-style: none;
 }
+
+// Media Query
+@mixin query($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}

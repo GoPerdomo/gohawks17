@@ -1,0 +1,25 @@
+.navbar {
+  background-color: $color-accent;
+  @include query($breakpoint-one) {
+    @include flex($just: space-between);
+  }
+  .nav-icons {
+    @include flex($just: space-between);
+    .logo {
+      width: 60px;
+      padding: 0 1em;
+    }
+    @include query($breakpoint-one) {
+      .hamburger-container {
+        display: none;
+      }
+    }
+  }
+  .hamburger {
+    @include outline;
+    &-container {
+      @include flex($dir: row-reverse);
+      padding: 0.2em;
+    }
+  }
+}

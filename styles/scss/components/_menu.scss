@@ -1,29 +1,9 @@
-.navbar {
-  background-color: $color-accent;
-
-  .nav-icons {
-    @include flex($just: space-between);
-
-    .logo {
-      width: 60px;
-      padding: 0 1em;
-    }
-  }
-}
-
-.nav {
-  &.is-active {
-    .nav-items {
-      height: auto;
+.menu {
+  @include query($breakpoint-one) {
+    @include flex;
+    width: 100%;
+    .menu-items {
       max-height: 20em;
-      transition: $transition-effect;
-    }
-  }
-  .hamburger {
-    @include outline;
-    &-container {
-      @include flex($dir: row-reverse);
-      padding: 0.2em;
     }
   }
   &-items {
@@ -31,19 +11,20 @@
     @include flex($dir: column) {
       align-items: center;
     }
-    ;
+    width: 100%;
     max-height: 0;
     overflow: hidden;
     transition: $transition-effect;
     background-color: $color-primary;
+    @include query($breakpoint-one) {
+      flex-direction: row;
+      background-color: $color-accent;
+    }
   }
   &-item {
-    &:first-child {
-      border-top: 1px solid $color-primary;
-    }
     width: 100%;
     text-align: center;
-    border-bottom: 1px solid $color-primary;
+    border-top: 1px solid $color-primary;
     a {
       @include outline;
       display: block;
@@ -54,6 +35,16 @@
       &:hover {
         opacity: 0.7;
       }
+    }
+    @include query($breakpoint-one) {
+      border: none;
+    }
+  }
+  &.is-active {
+    .menu-items {
+      height: auto;
+      max-height: 20em;
+      transition: $transition-effect;
     }
   }
 }
