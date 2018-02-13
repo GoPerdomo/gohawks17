@@ -1,13 +1,12 @@
 .player {
-  @include flex($wrap: wrap);
+  @include flex ($dir: column);
   
   &-info {
-    @include flex($dir: column);
-    flex: 1;
-    padding: $text-padding;
+    order: 1;
+    padding: $text-padding 0;
   }
-  
-  &-description {
-    flex: 1;
+
+  img {
+    width: 400px;
   }
 }

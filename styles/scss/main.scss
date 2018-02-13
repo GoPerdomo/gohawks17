@@ -7,14 +7,17 @@
         'base/base';
 
 // Layout Styles
-@import 'layout/header';
+@import 'layout/containers';
 
 // Component Styles
-@import 'components/navigation';
+@import 'components/navigation',
+        'components/banner',
+        'components/footer';
 
 // Pages Styles
 @import 'pages/overview',
         'pages/players',
-        'pages/needs',
-        'pages/schedule',
-        'pages/about';
+        'pages/schedule';
+
+// Vendor Styles
+@import 'vendor/hamburgers/hamburgers';

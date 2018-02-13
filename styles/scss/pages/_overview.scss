@@ -1,9 +1,12 @@
 .overview {
-  @include flex();
+  @include flex($dir: column);
   
   &-text {
-    width: 70%;
-    background-color: $color-primary;
-    padding: $text-padding;
+    padding: $text-padding 0;
+    order: 1;
+  }
+
+  &-img {
+    margin: auto;
   }
 }

@@ -1,6 +1,4 @@
-.location {
-  padding: $text-padding;
-  
+.location {  
   .games {
     @include flex($wrap: wrap);
     @include list;
@@ -9,16 +7,12 @@
   .team {
     @include flex($dir: column-reverse);
     align-items: center;
-    width: 25%;
-    padding: 20px 0;
-  }
-  
-  p {
-    padding: $text-padding;
-    font-weight: bold;
+    width: 50%;
+    margin: 2em 0;
   }
 
   img {
     height: 100px;
+    padding-bottom: $text-padding;
   }
 }

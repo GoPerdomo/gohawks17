@@ -6,9 +6,15 @@
 }
 
 // Borders
-@mixin border($px: $border, $border-color: $color-accent, $radius: null) {
-  border: $px solid $border-color;
-  border-radius: $radius;
+@mixin border {
+  border: $border solid $border-color;
+  @content;
+}
+
+@mixin outline {
+  &:focus {
+    outline: $outline;
+  }
 }
 
 // Flex Container
@@ -17,6 +23,7 @@
   flex-direction: $dir;
   flex-wrap: $wrap;
   justify-content: $just;
+  @content;
 }
 
 // Unordered List
