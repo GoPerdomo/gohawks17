@@ -35,7 +35,7 @@
     };
     max-height: 0;
     overflow: hidden;
-    transition: 1s $transition-effect;
+    transition: $transition-effect;
     background-color: $color-primary;
   }
 
@@ -54,7 +54,7 @@
     .nav-items {
       height: auto;
       max-height: 20em;
-      transition: 2s $transition-effect;
+      transition: $transition-effect;
     }
   }
 }

@@ -1,10 +1,12 @@
 .overview {
-    
+  @include flex($dir: column);
+  
   &-text {
     padding: $text-padding 0;
+    order: 1;
   }
 
   &-img {
-    order: -1;
+    margin: auto;
   }
 }

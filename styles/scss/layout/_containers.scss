@@ -1,21 +1,16 @@
-.content {
+main {
+  padding: $text-padding;
   margin-bottom: $margin-bottom;
-
-  .title {
-    order: -1;
-    font-size: 2em;
-    margin: 0;
-    padding-bottom: $header-padding;
-  }
-
-  h3 {
-    font-size: 1.5em;
-    padding-top: $text-padding;
-  }
-
-  > article {
-    @include flex($dir: column);
-    background-color: $color-primary;
-    padding: $text-padding;
+  background-color: $color-primary;
+  .content {
+    .title {
+      font-size: 2em;
+      margin: 0;
+      padding-bottom: $header-padding;
+    }
+    h3 {
+      font-size: 1.5em;
+      padding: $text-padding 0;
+    }
   }
 }
