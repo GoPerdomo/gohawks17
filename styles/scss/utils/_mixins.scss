@@ -1,7 +1,7 @@
 // Center containers
-@mixin center {
+@mixin center($margin: auto) {
   width: 90%;
-  margin: auto;
+  margin: $margin;
   max-width: $max-width;
 }
 

@@ -1,0 +1,21 @@
+.information {
+  .disclaimer {
+    @include query($bp-xs) {
+      width: 80%;
+    }
+    @include query($bp-md) {
+      width: 70%;
+    }
+  }
+  .contact {
+    a {
+      font-size: 1.8em;
+    }
+  }
+  @include query($bp-xs) {
+    @include flex($just: space-between);
+  }
+  @include query($bp-md) {
+    width: 70%;
+  }
+}
