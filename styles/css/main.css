@@ -530,7 +530,7 @@ footer {
     height: 100%;
     opacity: 0.5;
     z-index: -1;
-    background: url("/images/banner.png") 110% 30%/200% no-repeat; }
+    background: url("../../images/banner.png") 110% 30%/200% no-repeat; }
 
 .overview {
   display: flex;
