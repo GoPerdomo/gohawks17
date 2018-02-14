@@ -1,22 +1,32 @@
 footer {
+  margin-bottom: $margin-bottom;
   padding: $text-padding;
   color: $color-primary;
   h4 {
     color: $color-primary;
     padding-bottom: $text-padding;
-    font-size: 1.3em;
+    font-size: 1.5em;
+    @include query($bp-md) {
+      font-size: 1.8em;
+      width: 30%;
+      padding-top: 0;
+    }
   }
   h5 {
     color: $color-primary;
     padding: $text-padding 0;
     font-size: 1.2em;
+    @include query($bp-md) {
+      padding-top: 0;
+    }
   }
   p {
     font-size: 0.8em;
   }
-  .contact {
-    a {
-      font-size: 1.8em;
-    }
+  @include query($bp-sm) {
+    @include center($margin: auto auto $margin-bottom);
+  }
+  @include query($bp-md) {
+    @include flex;
   }
 }
