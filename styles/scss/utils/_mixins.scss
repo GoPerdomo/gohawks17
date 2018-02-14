@@ -1,6 +1,6 @@
 // Center containers
-@mixin center($w) {
-  width: $w;
+@mixin center {
+  width: 90%;
   margin: auto;
   max-width: $max-width;
 }
@@ -31,4 +31,11 @@
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+// Media Query
+@mixin query($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
 }

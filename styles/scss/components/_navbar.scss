@@ -1,0 +1,31 @@
+.navbar {
+  background-color: $color-accent;
+  &-container {
+    @include query($bp-xs) {
+      @include flex($just: space-between);
+    }
+    @include query($bp-sm) {
+      @include center;
+    }
+  }
+  &-icons {
+    @include flex($just: space-between);
+    .logo {
+      width: 60px;
+      padding: 0 1em;
+      @include query($bp-sm) {
+        padding: 0;
+      }
+    }
+    .hamburger {
+      @include outline;
+      &-container {
+        @include flex($dir: row-reverse);
+        padding: 0.2em;
+        @include query($bp-xs) {
+          display: none;
+        }
+      }
+    }
+  }
+}
