@@ -1,24 +1,22 @@
 .banner {
   position: relative;
   height: 200px;
-
+  z-index: 0;
+  background-color: #002244;
   @include flex($dir: column, $just: center) {
     align-items: center;
   }
-
   h1 {
     padding: 0;
     text-shadow: $text-shadow;
     font-size: $font-size * 3;
   }
-  
   span {
     margin: 0;
     color: $color-primary;
     text-shadow: $text-shadow;
     font-size: $font-size * 2;
   }
-
   &::before {
     content: '';
     position: absolute;
@@ -26,6 +24,24 @@
     height: 100%;
     opacity: 0.5;
     z-index: -1;
-    background: url("../../images/banner.png") 110% 30%/200% no-repeat;
+    background: url("../../images/banner.png") -425px -45px/770px no-repeat;
+    @include query($bp-xs) {
+      background-position-x: -350px;
+    }
+    @include query($bp-md) {
+      background-position-x: -315px;
+    }
+    @include query($bp-md2) {
+      background-position-x: -280px;
+    }
+    @include query($bp-lg) {
+      background-position-x: -220px;
+    }
+    @include query($bp-max) {
+      background-position-x: -110px;
+    }
+  }
+  @include query($bp-sm) {
+    @include center;
   }
 }

@@ -1,25 +1,31 @@
 .navbar {
   background-color: $color-accent;
-  @include query($breakpoint-one) {
-    @include flex($just: space-between);
+  &-container {
+    @include query($bp-xs) {
+      @include flex($just: space-between);
+    }
+    @include query($bp-sm) {
+      @include center;
+    }
   }
-  .nav-icons {
+  &-icons {
     @include flex($just: space-between);
     .logo {
       width: 60px;
       padding: 0 1em;
-    }
-    @include query($breakpoint-one) {
-      .hamburger-container {
-        display: none;
+      @include query($bp-sm) {
+        padding: 0;
       }
     }
-  }
-  .hamburger {
-    @include outline;
-    &-container {
-      @include flex($dir: row-reverse);
-      padding: 0.2em;
+    .hamburger {
+      @include outline;
+      &-container {
+        @include flex($dir: row-reverse);
+        padding: 0.2em;
+        @include query($bp-xs) {
+          display: none;
+        }
+      }
     }
   }
 }

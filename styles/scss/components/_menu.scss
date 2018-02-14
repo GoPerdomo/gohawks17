@@ -1,14 +1,7 @@
 .menu {
-  @include query($breakpoint-one) {
-    @include flex;
-    width: 100%;
-    .menu-items {
-      max-height: 20em;
-    }
-  }
   &-items {
     @include list;
-    @include flex($dir: column) {
+    @include flex($dir: column, $just: space-between) {
       align-items: center;
     }
     width: 100%;
@@ -16,7 +9,7 @@
     overflow: hidden;
     transition: $transition-effect;
     background-color: $color-primary;
-    @include query($breakpoint-one) {
+    @include query($bp-xs) {
       flex-direction: row;
       background-color: $color-accent;
     }
@@ -35,8 +28,12 @@
       &:hover {
         opacity: 0.7;
       }
+      @include query($bp-sm) {
+        padding: 0;
+      }
     }
-    @include query($breakpoint-one) {
+    @include query($bp-xs) {
+      width: auto;
       border: none;
     }
   }
@@ -46,5 +43,24 @@
       max-height: 20em;
       transition: $transition-effect;
     }
+  }
+  @include query($bp-xs) {
+    @include flex;
+    width: 100%;
+    .menu-items {
+      max-height: 20em;
+    }
+  }
+  @include query($bp-sm) {
+    width: 80%;
+  }
+  @include query($bp-md) {
+    width: 70%;
+  }
+  @include query($bp-md2) {
+    width: 60%;
+  }
+  @include query($bp-lg) {
+    width: 50%;
   }
 }

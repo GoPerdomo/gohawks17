@@ -1,8 +1,8 @@
 main {
-  padding: $text-padding;
   margin-bottom: $margin-bottom;
-  background-color: $color-primary;
   .content {
+    padding: $text-padding;
+    background-color: $color-primary;
     .title {
       font-size: 2em;
       margin: 0;

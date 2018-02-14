@@ -390,7 +390,7 @@ template {
   display: none; }
 
 body {
-  min-height: 100vh;
+  min-width: 320px;
   background-color: #002244;
   font-family: "Oswald", "Arial Narrow", "Arial", sans-serif; }
 
@@ -416,65 +416,71 @@ a {
   color: inherit; }
 
 main {
-  padding: 1em;
-  margin-bottom: 50px;
-  background-color: #f2f2f2; }
-  main .content .title {
-    font-size: 2em;
-    margin: 0;
-    padding-bottom: 0.5em; }
-  main .content h3 {
-    font-size: 1.5em;
-    padding: 1em 0; }
+  margin-bottom: 50px; }
+  main .content {
+    padding: 1em;
+    background-color: #f2f2f2; }
+    main .content .title {
+      font-size: 2em;
+      margin: 0;
+      padding-bottom: 0.5em; }
+    main .content h3 {
+      font-size: 1.5em;
+      padding: 1em 0; }
 
 footer {
-  font-size: 0.8em;
   padding: 1em;
   color: #f2f2f2; }
   footer h4 {
     color: #f2f2f2;
-    font-size: 1.7em; }
+    padding-bottom: 1em;
+    font-size: 1.3em; }
   footer h5 {
     color: #f2f2f2;
     padding: 1em 0;
-    font-size: 1.5em; }
+    font-size: 1.2em; }
+  footer p {
+    font-size: 0.8em; }
   footer .contact a {
-    font-size: 2em; }
+    font-size: 1.8em; }
 
 .navbar {
   background-color: #8a9396; }
   @media (min-width: 620px) {
-    .navbar {
+    .navbar-container {
       display: flex;
       justify-content: space-between; } }
-  .navbar .nav-icons {
+  @media (min-width: 720px) {
+    .navbar-container {
+      width: 90%;
+      margin: auto;
+      max-width: 1300px; } }
+  .navbar-icons {
     display: flex;
     justify-content: space-between; }
-    .navbar .nav-icons .logo {
+    .navbar-icons .logo {
       width: 60px;
       padding: 0 1em; }
-    @media (min-width: 620px) {
-      .navbar .nav-icons .hamburger-container {
-        display: none; } }
-  .navbar .hamburger:focus {
-    outline: 1px auto #f2f2f2; }
-  .navbar .hamburger-container {
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 0.2em; }
+      @media (min-width: 720px) {
+        .navbar-icons .logo {
+          padding: 0; } }
+    .navbar-icons .hamburger:focus {
+      outline: 1px auto #f2f2f2; }
+    .navbar-icons .hamburger-container {
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 0.2em; }
+      @media (min-width: 620px) {
+        .navbar-icons .hamburger-container {
+          display: none; } }
 
-@media (min-width: 620px) {
-  .menu {
-    display: flex;
-    width: 100%; }
-    .menu .menu-items {
-      max-height: 20em; } }
 .menu-items {
   padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   max-height: 0;
@@ -499,17 +505,41 @@ footer {
       outline: 1px auto #f2f2f2; }
     .menu-item a:hover {
       opacity: 0.7; }
+    @media (min-width: 720px) {
+      .menu-item a {
+        padding: 0; } }
   @media (min-width: 620px) {
     .menu-item {
+      width: auto;
       border: none; } }
 .menu.is-active .menu-items {
   height: auto;
   max-height: 20em;
   transition: 1s cubic-bezier(0.4, 0, 0.2, 1); }
+@media (min-width: 620px) {
+  .menu {
+    display: flex;
+    width: 100%; }
+    .menu .menu-items {
+      max-height: 20em; } }
+@media (min-width: 720px) {
+  .menu {
+    width: 80%; } }
+@media (min-width: 820px) {
+  .menu {
+    width: 70%; } }
+@media (min-width: 920px) {
+  .menu {
+    width: 60%; } }
+@media (min-width: 1040px) {
+  .menu {
+    width: 50%; } }
 
 .banner {
   position: relative;
   height: 200px;
+  z-index: 0;
+  background-color: #002244;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -530,7 +560,27 @@ footer {
     height: 100%;
     opacity: 0.5;
     z-index: -1;
-    background: url("../../images/banner.png") 110% 30%/200% no-repeat; }
+    background: url("../../images/banner.png") -425px -45px/770px no-repeat; }
+    @media (min-width: 620px) {
+      .banner::before {
+        background-position-x: -350px; } }
+    @media (min-width: 820px) {
+      .banner::before {
+        background-position-x: -315px; } }
+    @media (min-width: 920px) {
+      .banner::before {
+        background-position-x: -280px; } }
+    @media (min-width: 1040px) {
+      .banner::before {
+        background-position-x: -220px; } }
+    @media (min-width: 1300px) {
+      .banner::before {
+        background-position-x: -110px; } }
+  @media (min-width: 720px) {
+    .banner {
+      width: 90%;
+      margin: auto;
+      max-width: 1300px; } }
 
 .overview {
   display: flex;

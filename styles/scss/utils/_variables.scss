@@ -15,6 +15,7 @@ $outline: 1px auto $color-primary;
 
 // Layout
 $max-width: 1300px;
+$min-width: 320px;
 $border: 5px;
 $margin-bottom: 50px;
 
@@ -23,4 +24,9 @@ $transition-effect: 1s cubic-bezier(0.4, 0, 0.2, 1);
 
 
 // Breakpoints
-$breakpoint-one: 620px;
+$bp-xs: 620px;
+$bp-sm: 720px;
+$bp-md: 820px;
+$bp-md2: 920px;
+$bp-lg: 1040px;
+$bp-max: $max-width;
