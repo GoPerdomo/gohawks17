@@ -6,15 +6,15 @@
   }
   .need {
     @include query($bp-md) {
-      flex-basis: 48%;
+      width: 48%;
       &:nth-child(3) {
-        flex-basis: 100%;
+        width: 100%;
       }
     }
     @include query($bp-lg) {
-      flex-basis: 30%;
+      width: 30%;
       &:nth-child(3) {
-        flex-basis: 30%;
+        width: 30%;
         order: -1;
       }
     }
