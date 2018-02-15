@@ -393,6 +393,9 @@ body {
   min-width: 320px;
   background-color: #002244;
   font-family: "Oswald", "Arial Narrow", "Arial", sans-serif; }
+  @media (min-width: 1300px) {
+    body {
+      font-size: 1.1em; } }
 
 img {
   display: block;
@@ -402,7 +405,10 @@ h1 {
   color: #f2f2f2;
   margin: 0; }
 
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
   color: #002244;
   margin: 0; }
 
@@ -416,17 +422,27 @@ a {
   color: inherit; }
 
 main {
+  box-sizing: border-box;
   margin-bottom: 50px; }
-  main .content {
+  main > section {
     padding: 1em;
     background-color: #f2f2f2; }
-    main .content .title {
+    @media (min-width: 1040px) {
+      main > section {
+        padding: 2em; } }
+    main > section .title {
       font-size: 2em;
       margin: 0;
       padding-bottom: 0.5em; }
-    main .content h3 {
+    main > section h3 {
       font-size: 1.5em;
       padding: 1em 0; }
+  @media (min-width: 720px) {
+    main {
+      width: 90%;
+      margin: auto auto 50px;
+      max-width: 1300px;
+      border: 5px solid #8a9396; } }
 
 footer {
   margin-bottom: 50px;
@@ -613,14 +629,41 @@ footer {
   .information {
     width: 70%; } }
 
-.overview {
+.overview-info {
   display: flex;
-  flex-direction: column; }
-  .overview-text {
-    padding: 1em 0;
-    order: 1; }
-  .overview-img {
-    margin: auto; }
+  flex-direction: column;
+  padding-bottom: 1em; }
+  @media (min-width: 720px) {
+    .overview-info {
+      flex-direction: row;
+      justify-content: space-between; } }
+.overview-text {
+  padding: 1em 0;
+  order: 1; }
+  @media (min-width: 720px) {
+    .overview-text {
+      width: 50%;
+      order: 0;
+      padding: 0; } }
+.overview-img {
+  max-height: 300px;
+  overflow: hidden;
+  margin: auto; }
+  @media (min-width: 720px) {
+    .overview-img {
+      width: 47%;
+      margin: 0; } }
+  @media (min-width: 720px) {
+    .overview-img img {
+      transform: translateX(-140px);
+      max-width: none; } }
+  @media (min-width: 920px) {
+    .overview-img img {
+      transform: translateX(-110px); } }
+  @media (min-width: 1040px) {
+    .overview-img img {
+      transform: none;
+      max-width: 100%; } }
 
 .player {
   display: flex;

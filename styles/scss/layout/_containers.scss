@@ -1,8 +1,12 @@
 main {
+  box-sizing: border-box;
   margin-bottom: $margin-bottom;
-  .content {
+  >section {
     padding: $text-padding;
     background-color: $color-primary;
+    @include query($bp-lg) {
+      padding: $text-padding * 2;
+    }
     .title {
       font-size: 2em;
       margin: 0;
@@ -12,5 +16,9 @@ main {
       font-size: 1.5em;
       padding: $text-padding 0;
     }
+  }
+  @include query($bp-sm) {
+    @include center($margin: auto auto $margin-bottom);
+    @include border;
   }
 }
