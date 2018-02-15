@@ -437,6 +437,8 @@ main {
     main > section h3 {
       font-size: 1.5em;
       padding: 1em 0; }
+    main > section > article {
+      padding-bottom: 1em; }
   @media (min-width: 720px) {
     main {
       width: 90%;
@@ -645,34 +647,90 @@ footer {
       width: 50%;
       order: 0;
       padding: 0; } }
-.overview-img {
+.overview-photo {
   max-height: 300px;
-  overflow: hidden;
-  margin: auto; }
+  overflow: hidden; }
   @media (min-width: 720px) {
-    .overview-img {
-      width: 47%;
-      margin: 0; } }
-  @media (min-width: 720px) {
-    .overview-img img {
-      transform: translateX(-140px);
-      max-width: none; } }
-  @media (min-width: 920px) {
-    .overview-img img {
-      transform: translateX(-110px); } }
-  @media (min-width: 1040px) {
-    .overview-img img {
-      transform: none;
-      max-width: 100%; } }
+    .overview-photo {
+      width: 47%; } }
+.overview img {
+  width: 100%; }
+@media (min-width: 720px) {
+  .overview img {
+    width: auto;
+    max-width: none;
+    height: 100%;
+    transform: translateX(-80px); } }
+@media (min-width: 920px) {
+  .overview img {
+    transform: translateX(-50px); } }
+@media (min-width: 1040px) {
+  .overview img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transform: none; } }
 
-.player {
+.player-info {
   display: flex;
-  flex-direction: column; }
-  .player-info {
-    order: 1;
-    padding: 1em 0; }
+  flex-direction: column;
+  padding-bottom: 1em; }
+  @media (min-width: 720px) {
+    .player-info {
+      flex-direction: row;
+      justify-content: space-between; } }
+.player-text {
+  padding: 1em 0;
+  order: 1; }
+  @media (min-width: 720px) {
+    .player-text {
+      width: 50%;
+      order: 0;
+      padding: 0; } }
+.player-photo {
+  max-height: 300px;
+  overflow: hidden; }
+  @media (min-width: 720px) {
+    .player-photo {
+      width: 47%; } }
+.player img {
+  width: 100%; }
+@media (min-width: 720px) {
   .player img {
-    width: 400px; }
+    width: auto;
+    max-width: none;
+    height: 100%;
+    transform: translateX(-50px); } }
+@media (min-width: 820px) {
+  .player img {
+    transform: translateX(-35px); } }
+@media (min-width: 920px) {
+  .player img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transform: none; } }
+.player h3 {
+  padding-bottom: 0; }
+.player h4 {
+  padding-bottom: 1em; }
+
+@media (min-width: 820px) {
+  .needs > article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; } }
+@media (min-width: 820px) {
+  .needs .need {
+    flex-basis: 48%; }
+    .needs .need:nth-child(3) {
+      flex-basis: 100%; } }
+@media (min-width: 1040px) {
+  .needs .need {
+    flex-basis: 30%; }
+    .needs .need:nth-child(3) {
+      flex-basis: 30%;
+      order: -1; } }
 
 .location .games {
   display: flex;

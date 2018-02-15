@@ -16,6 +16,9 @@ main {
       font-size: 1.5em;
       padding: $text-padding 0;
     }
+    >article {
+      padding-bottom: $text-padding;
+    }
   }
   @include query($bp-sm) {
     @include center($margin: auto auto $margin-bottom);

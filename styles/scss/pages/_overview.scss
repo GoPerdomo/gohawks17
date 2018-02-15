@@ -1,41 +1,20 @@
 .overview {
-  &-info {
-    @include flex($dir: column);
-    padding-bottom: $text-padding;
+  @include layout-text-img;
+  img {
     @include query($bp-sm) {
-      flex-direction: row;
-      justify-content: space-between;
+      width: auto;
+      max-width: none;
+      height: 100%;
+      transform: translateX(-80px);
     }
-  }
-  &-text {
-    padding: $text-padding 0;
-    order: 1;
-    @include query($bp-sm) {
-      width: 50%;
-      order: 0;
-      padding: 0;
+    @include query($bp-md2) {
+      transform: translateX(-50px);
     }
-  }
-  &-img {
-    max-height: 300px;
-    overflow: hidden;
-    margin: auto;
-    @include query($bp-sm) {
-      width: 47%;
-      margin: 0;
-    }
-    img {
-      @include query($bp-sm) {
-        transform: translateX(-140px);
-        max-width: none;
-      }
-      @include query($bp-md2) {
-        transform: translateX(-110px);
-      }
-      @include query($bp-lg) {
-        transform: none;
-        max-width: 100%;
-      }
+    @include query($bp-lg) {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      transform: none;
     }
   }
 }

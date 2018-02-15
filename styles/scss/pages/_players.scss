@@ -1,12 +1,26 @@
 .player {
-  @include flex ($dir: column);
-  
-  &-info {
-    order: 1;
-    padding: $text-padding 0;
-  }
-
+  @include layout-text-img;
   img {
-    width: 400px;
+    @include query($bp-sm) {
+      width: auto;
+      max-width: none;
+      height: 100%;
+      transform: translateX(-50px);
+    }
+    @include query($bp-md) {
+      transform: translateX(-35px);
+    }
+    @include query($bp-md2) {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      transform: none;
+    }
+  }
+  h3 {
+    padding-bottom: 0;
+  }
+  h4 {
+    padding-bottom: $text-padding;
   }
 }
