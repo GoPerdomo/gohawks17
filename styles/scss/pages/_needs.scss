@@ -1,0 +1,22 @@
+.needs {
+  >article {
+    @include query($bp-md) {
+      @include flex($just: space-between, $wrap: wrap);
+    }
+  }
+  .need {
+    @include query($bp-md) {
+      width: 48%;
+      &:nth-child(3) {
+        width: 100%;
+      }
+    }
+    @include query($bp-lg) {
+      width: 30%;
+      &:nth-child(3) {
+        width: 30%;
+        order: -1;
+      }
+    }
+  }
+}

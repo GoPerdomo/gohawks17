@@ -2,6 +2,9 @@ body {
   min-width: $min-width;
   background-color: $color-secondary;
   font-family: $main-font;
+  @include query($bp-max) {
+    font-size: $font-size-lg;
+  }
 }
 
 img {
@@ -14,7 +17,10 @@ h1 {
   margin: 0;
 }
 
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
   color: $color-secondary;
   margin: 0;
 }

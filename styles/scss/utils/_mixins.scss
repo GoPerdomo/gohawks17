@@ -17,13 +17,43 @@
   }
 }
 
-// Flex Container
+// Containers
 @mixin flex($dir: null, $wrap: null, $just: null) {
   display: flex;
   flex-direction: $dir;
   flex-wrap: $wrap;
   justify-content: $just;
   @content;
+}
+
+@mixin layout-text-img {
+  &-info {
+    @include flex($dir: column);
+    padding-bottom: $text-padding;
+    @include query($bp-sm) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &-text {
+    padding: $text-padding 0;
+    order: 1;
+    @include query($bp-sm) {
+      width: 50%;
+      order: 0;
+      padding: 0;
+    }
+  }
+  &-photo {
+    max-height: $img-max-height;
+    overflow: hidden;
+    @include query($bp-sm) {
+      width: 47%;
+    }
+  }
+  img {
+    width: 100%;
+  }
 }
 
 // Unordered List

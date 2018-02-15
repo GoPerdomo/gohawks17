@@ -1,12 +1,20 @@
 .overview {
-  @include flex($dir: column);
-  
-  &-text {
-    padding: $text-padding 0;
-    order: 1;
-  }
-
-  &-img {
-    margin: auto;
+  @include layout-text-img;
+  img {
+    @include query($bp-sm) {
+      width: auto;
+      max-width: none;
+      height: 100%;
+      transform: translateX(-80px);
+    }
+    @include query($bp-md2) {
+      transform: translateX(-50px);
+    }
+    @include query($bp-lg) {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      transform: none;
+    }
   }
 }

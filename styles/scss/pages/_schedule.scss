@@ -1,18 +1,22 @@
-.location {  
+.location {
   .games {
-    @include flex($wrap: wrap);
+    @include flex($just: space-between, $wrap: wrap);
     @include list;
   }
-  
   .team {
     @include flex($dir: column-reverse);
     align-items: center;
     width: 50%;
     margin: 2em 0;
+    @include query($bp-md2) {
+      width: 21%;
+    }
   }
-
   img {
     height: 100px;
     padding-bottom: $text-padding;
+  }
+  p {
+    text-align: center;
   }
 }

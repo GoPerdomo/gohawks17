@@ -390,9 +390,12 @@ template {
   display: none; }
 
 body {
-  min-width: 320px;
+  min-width: 350px;
   background-color: #002244;
   font-family: "Oswald", "Arial Narrow", "Arial", sans-serif; }
+  @media (min-width: 1300px) {
+    body {
+      font-size: 1.1em; } }
 
 img {
   display: block;
@@ -402,7 +405,10 @@ h1 {
   color: #f2f2f2;
   margin: 0; }
 
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
   color: #002244;
   margin: 0; }
 
@@ -416,17 +422,29 @@ a {
   color: inherit; }
 
 main {
+  box-sizing: border-box;
   margin-bottom: 50px; }
-  main .content {
+  main > section {
     padding: 1em;
     background-color: #f2f2f2; }
-    main .content .title {
+    @media (min-width: 1040px) {
+      main > section {
+        padding: 2em; } }
+    main > section .title {
       font-size: 2em;
       margin: 0;
       padding-bottom: 0.5em; }
-    main .content h3 {
+    main > section h3 {
       font-size: 1.5em;
       padding: 1em 0; }
+    main > section > article {
+      padding-bottom: 1em; }
+  @media (min-width: 720px) {
+    main {
+      width: 90%;
+      margin: auto auto 50px;
+      max-width: 1300px;
+      border: 5px solid #8a9396; } }
 
 footer {
   margin-bottom: 50px;
@@ -613,27 +631,111 @@ footer {
   .information {
     width: 70%; } }
 
-.overview {
+.overview-info {
   display: flex;
-  flex-direction: column; }
-  .overview-text {
-    padding: 1em 0;
-    order: 1; }
-  .overview-img {
-    margin: auto; }
+  flex-direction: column;
+  padding-bottom: 1em; }
+  @media (min-width: 720px) {
+    .overview-info {
+      flex-direction: row;
+      justify-content: space-between; } }
+.overview-text {
+  padding: 1em 0;
+  order: 1; }
+  @media (min-width: 720px) {
+    .overview-text {
+      width: 50%;
+      order: 0;
+      padding: 0; } }
+.overview-photo {
+  max-height: 300px;
+  overflow: hidden; }
+  @media (min-width: 720px) {
+    .overview-photo {
+      width: 47%; } }
+.overview img {
+  width: 100%; }
+@media (min-width: 720px) {
+  .overview img {
+    width: auto;
+    max-width: none;
+    height: 100%;
+    transform: translateX(-80px); } }
+@media (min-width: 920px) {
+  .overview img {
+    transform: translateX(-50px); } }
+@media (min-width: 1040px) {
+  .overview img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transform: none; } }
 
-.player {
+.player-info {
   display: flex;
-  flex-direction: column; }
-  .player-info {
-    order: 1;
-    padding: 1em 0; }
+  flex-direction: column;
+  padding-bottom: 1em; }
+  @media (min-width: 720px) {
+    .player-info {
+      flex-direction: row;
+      justify-content: space-between; } }
+.player-text {
+  padding: 1em 0;
+  order: 1; }
+  @media (min-width: 720px) {
+    .player-text {
+      width: 50%;
+      order: 0;
+      padding: 0; } }
+.player-photo {
+  max-height: 300px;
+  overflow: hidden; }
+  @media (min-width: 720px) {
+    .player-photo {
+      width: 47%; } }
+.player img {
+  width: 100%; }
+@media (min-width: 720px) {
   .player img {
-    width: 400px; }
+    width: auto;
+    max-width: none;
+    height: 100%;
+    transform: translateX(-50px); } }
+@media (min-width: 820px) {
+  .player img {
+    transform: translateX(-35px); } }
+@media (min-width: 920px) {
+  .player img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    transform: none; } }
+.player h3 {
+  padding-bottom: 0; }
+.player h4 {
+  padding-bottom: 1em; }
+
+@media (min-width: 820px) {
+  .needs > article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; } }
+@media (min-width: 820px) {
+  .needs .need {
+    width: 48%; }
+    .needs .need:nth-child(3) {
+      width: 100%; } }
+@media (min-width: 1040px) {
+  .needs .need {
+    width: 30%; }
+    .needs .need:nth-child(3) {
+      width: 30%;
+      order: -1; } }
 
 .location .games {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
   list-style: none; }
@@ -643,9 +745,14 @@ footer {
   align-items: center;
   width: 50%;
   margin: 2em 0; }
+  @media (min-width: 920px) {
+    .location .team {
+      width: 21%; } }
 .location img {
   height: 100px;
   padding-bottom: 1em; }
+.location p {
+  text-align: center; }
 
 /*!
  * Hamburgers

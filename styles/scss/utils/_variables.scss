@@ -6,6 +6,7 @@ $border-color: $color-accent;
 
 // Text
 $font-size: 1em;
+$font-size-lg: 1.1em;
 $main-font: 'Oswald', 'Arial Narrow', 'Arial', sans-serif;
 $text-font: 'Open Sans', sans-serif;
 $text-padding: 1em;
@@ -13,9 +14,12 @@ $header-padding: 0.5em;
 $text-shadow: -2px 0px black, 0px -2px black, -1px 0px black, 0px -1px black, 1px 0px black, 0px 1px black, 2px 0px black, 0px 2px black;
 $outline: 1px auto $color-primary;
 
+// Images
+$img-max-height: 300px;
+
 // Layout
 $max-width: 1300px;
-$min-width: 320px;
+$min-width: 350px;
 $border: 5px;
 $margin-bottom: 50px;
 
