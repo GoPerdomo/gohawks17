@@ -1,14 +1,16 @@
 const express = require('express');
 const app = express();
+const path = require('path');
 
 const config = require('./config/config');
 const routes = require('./routes/index');
 
 // Set pug as template engine
 app.set('view engine', 'pug');
+app.set('views', path.join(`${__dirname}/views`));
 
 // Use routes
-app.use("/", routes);
+app.use(routes);
 
 // Catch 404 Error
 app.use((req, res, next) => {
