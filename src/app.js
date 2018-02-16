@@ -12,6 +12,9 @@ app.set('views', path.join(`${__dirname}/views`));
 // Use routes
 app.use(routes);
 
+// Serve static files
+app.use(express.static(path.join(`${__dirname}/public`)));
+
 // Catch 404 Error
 app.use((req, res, next) => {
   const err = new Error('Not found');

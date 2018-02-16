@@ -660,10 +660,13 @@ footer {
     width: auto;
     max-width: none;
     height: 100%;
-    transform: translateX(-80px); } }
-@media (min-width: 920px) {
+    transform: translateX(-70px); } }
+@media (min-width: 820px) {
   .overview img {
     transform: translateX(-50px); } }
+@media (min-width: 920px) {
+  .overview img {
+    transform: translateX(-40px); } }
 @media (min-width: 1040px) {
   .overview img {
     width: 100%;
