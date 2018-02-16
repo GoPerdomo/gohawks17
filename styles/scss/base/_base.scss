@@ -2,6 +2,8 @@ body {
   min-width: $min-width;
   background-color: $color-secondary;
   font-family: $main-font;
+
+  ////// Media Query //////
   @include query($bp-max) {
     font-size: $font-size-lg;
   }

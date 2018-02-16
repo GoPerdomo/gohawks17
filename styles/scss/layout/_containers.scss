@@ -1,25 +1,34 @@
 main {
   box-sizing: border-box;
   margin-bottom: $margin-bottom;
-  >section {
+
+  > section {
     padding: $text-padding;
     background-color: $color-primary;
+
+    ////// Media Query //////
     @include query($bp-lg) {
       padding: $text-padding * 2;
     }
+
+
     .title {
       font-size: 2em;
       margin: 0;
       padding-bottom: $header-padding;
     }
+
     h3 {
       font-size: 1.5em;
       padding: $text-padding 0;
     }
-    >article {
+
+    > article {
       padding-bottom: $text-padding;
     }
   }
+
+  ////// Media Query //////
   @include query($bp-sm) {
     @include center($margin: auto auto $margin-bottom);
     @include border;

@@ -8,6 +8,7 @@
 // Borders
 @mixin border {
   border: $border solid $border-color;
+  
   @content;
 }
 
@@ -23,6 +24,7 @@
   flex-direction: $dir;
   flex-wrap: $wrap;
   justify-content: $just;
+
   @content;
 }
 
@@ -30,27 +32,36 @@
   &-info {
     @include flex($dir: column);
     padding-bottom: $text-padding;
+
+    ////// Media Query //////
     @include query($bp-sm) {
       flex-direction: row;
       justify-content: space-between;
     }
   }
+
   &-text {
     padding: $text-padding 0;
     order: 1;
+
+    ////// Media Query //////
     @include query($bp-sm) {
       width: 50%;
       order: 0;
       padding: 0;
     }
   }
+
   &-photo {
     max-height: $img-max-height;
     overflow: hidden;
+
+    ////// Media Query //////
     @include query($bp-sm) {
       width: 47%;
     }
   }
+
   img {
     width: 100%;
   }
