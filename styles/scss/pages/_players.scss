@@ -1,15 +1,23 @@
 .player {
   @include layout-text-img;
+
   img {
+    ////// Media Query //////
     @include query($bp-sm) {
       width: auto;
       max-width: none;
       height: 100%;
       transform: translateX(-50px);
     }
+
+
+    ////// Media Query //////
     @include query($bp-md) {
       transform: translateX(-35px);
     }
+
+
+    ////// Media Query //////
     @include query($bp-md2) {
       width: 100%;
       max-width: 100%;
@@ -17,9 +25,11 @@
       transform: none;
     }
   }
+
   h3 {
     padding-bottom: 0;
   }
+
   h4 {
     padding-bottom: $text-padding;
   }

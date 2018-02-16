@@ -1,18 +1,26 @@
 .needs {
-  >article {
+  > article {
+    ////// Media Query //////
     @include query($bp-md) {
       @include flex($just: space-between, $wrap: wrap);
     }
   }
+
   .need {
+    ////// Media Query //////
     @include query($bp-md) {
       width: 48%;
+
       &:nth-child(3) {
         width: 100%;
       }
     }
+
+
+    ////// Media Query //////
     @include query($bp-lg) {
       width: 30%;
+
       &:nth-child(3) {
         width: 30%;
         order: -1;

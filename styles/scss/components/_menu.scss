@@ -4,39 +4,52 @@
     @include flex($dir: column, $just: space-between) {
       align-items: center;
     }
+
+
     width: 100%;
     max-height: 0;
     overflow: hidden;
     transition: $transition-effect;
     background-color: $color-primary;
+
+    ////// Media Query //////
     @include query($bp-xs) {
       flex-direction: row;
       background-color: $color-accent;
     }
   }
+
   &-item {
     width: 100%;
     text-align: center;
     border-top: 1px solid $color-primary;
+
     a {
       @include outline;
+
       display: block;
       padding: .5em;
       font-size: 1.5em;
       color: $color-primary;
       background-color: $color-accent;
+
       &:hover {
         opacity: 0.7;
       }
+
+      ////// Media Query //////
       @include query($bp-sm) {
         padding: 0;
       }
     }
+
+    ////// Media Query //////
     @include query($bp-xs) {
       width: auto;
       border: none;
     }
   }
+
   &.is-active {
     .menu-items {
       height: auto;
@@ -44,22 +57,38 @@
       transition: $transition-effect;
     }
   }
+
+  ////// Media Query //////
   @include query($bp-xs) {
     @include flex;
+
     width: 100%;
+
     .menu-items {
       max-height: 20em;
     }
   }
+
+
+  ////// Media Query //////
   @include query($bp-sm) {
     width: 80%;
   }
+
+
+  ////// Media Query //////
   @include query($bp-md) {
     width: 70%;
   }
+
+
+  ////// Media Query //////
   @include query($bp-md2) {
     width: 60%;
   }
+
+
+  ////// Media Query //////
   @include query($bp-lg) {
     width: 50%;
   }
