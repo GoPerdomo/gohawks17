@@ -1,0 +1,144 @@
+{
+  "schedule": {
+    "locations": [
+      {
+        "title": "Home",
+        "games": [
+          {
+            "name": "Arizona Cardinals",
+            "photo": {
+              "src": "images/teams/cardinals.png",
+              "alt": "Arizona Cardinals",
+              "aria": "The Arizona Cardinals Logo"
+            }
+          },
+          {
+            "name": "San Francisco 49ers",
+            "photo": {
+              "src": "images/teams/49ers.png",
+              "alt": "San Francisco 49ers",
+              "aria": "The San Francisco 49ers Logo"
+            }
+          },
+          {
+            "name": "Los Angeles Rams",
+            "photo": {
+              "src": "images/teams/rams.png",
+              "alt": "Los Angeles Rams",
+              "aria": "The Los Angeles Rams Logo"
+            }
+          },
+          {
+            "name": "Atlanta Falcons",
+            "photo": {
+              "src": "images/teams/falcons.png",
+              "alt": "Atlanta Falcons",
+              "aria": "The Atlanta Falcons Logo"
+            }
+          },
+          {
+            "name": "Philadelphia Eagles",
+            "photo": {
+              "src": "images/teams/eagles.png",
+              "alt": "Philadelphia Eagles",
+              "aria": "The Philadelphia Eagles Logo"
+            }
+          },
+          {
+            "name": "Washington Redskins",
+            "photo": {
+              "src": "images/teams/redskins.png",
+              "alt": "Washington Redskins",
+              "aria": "The Washington Redskins Logo"
+            }
+          },
+          {
+            "name": "Houston Texans",
+            "photo": {
+              "src": "images/teams/texans.png",
+              "alt": "Houston Texans",
+              "aria": "The Houston Texans Logo"
+            }
+          },
+          {
+            "name": "Indianapolis Colts",
+            "photo": {
+              "src": "images/teams/colts.png",
+              "alt": "Indianapolis Colts",
+              "aria": "The Indianapolis Colts Logo"
+            }
+          }
+        ]
+      },
+      {
+        "title": "Away",
+        "games": [
+          {
+            "name": "Arizona Cardinals",
+            "photo": {
+              "src": "images/teams/cardinals.png",
+              "alt": "Arizona Cardinals",
+              "aria": "The Arizona Cardinals Logo"
+            }
+          },
+          {
+            "name": "San Francisco 49ers",
+            "photo": {
+              "src": "images/teams/49ers.png",
+              "alt": "San Francisco 49ers",
+              "aria": "The San Francisco 49ers Logo"
+            }
+          },
+          {
+            "name": "Los Angeles Rams",
+            "photo": {
+              "src": "images/teams/rams.png",
+              "alt": "Los Angeles Rams",
+              "aria": "The Los Angeles Rams Logo"
+            }
+          },
+          {
+            "name": "Dallas Cowboys",
+            "photo": {
+              "src": "images/teams/cowboys.png",
+              "alt": "Dallas Cowboys",
+              "aria": "The Dallas Cowboys Logo"
+            }
+          },
+          {
+            "name": "Green Bay Packers",
+            "photo": {
+              "src": "images/teams/packers.png",
+              "alt": "Green Bay Packers",
+              "aria": "The Green Bay Packers Logo"
+            }
+          },
+          {
+            "name": "New York Giants",
+            "photo": {
+              "src": "images/teams/giants.png",
+              "alt": "New York Giants",
+              "aria": "The New York Giants Logo"
+            }
+          },
+          {
+            "name": "Tennessee Titans",
+            "photo": {
+              "src": "images/teams/titans.png",
+              "alt": "Tennessee Titans",
+              "aria": "The Tennessee Titans Logo"
+            }
+          },
+          {
+            "name": "Jacksonville Jaguars",
+            "photo": {
+              "src": "images/teams/jaguars.png",
+              "alt": "Jacksonville Jaguars",
+              "aria": "The Jacksonville Jaguars Logo"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

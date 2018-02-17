@@ -415,6 +415,7 @@ h5 {
 p {
   font-family: "Open Sans", sans-serif;
   margin: 0;
+  padding-bottom: 1em;
   text-align: justify; }
 
 a {
@@ -623,6 +624,8 @@ footer {
     width: 70%; } }
 .information .contact a {
   font-size: 1.8em; }
+  .information .contact a:first-child {
+    padding-right: 0.3em; }
 @media (min-width: 620px) {
   .information {
     display: flex;

@@ -1,0 +1,69 @@
+{
+  "players": [
+    {
+      "name": "Russell Wilson",
+      "position": "Quarterback",
+      "texts": [
+        "Considered too short for a Quarterback, and refused by many teams because of that, Russell Wilson has proven that his size is not a problem and became one of the best active QB in the league: In 2015, he became the first quarterback in NFL history to have 4,000 or more passing yards, 30 or more passing touchdowns, and 500 or more rushing yards in the same season.",
+        "Wilson suffered multiple injuries on the 2016 season but still managed to finish it with 4,219 passing yards (setting his career high and franchise record), 21 passing touchdowns, 259 rushing yards, and one rushing touchdown. Now, healthy once again, he plans to lead his team all the way to the Super Bowl LII."
+      ],
+      "photo": {
+        "src": "images/players/wilson.jpg",
+        "alt": "Russell Wilson",
+        "aria": "Russell Wilson geting ready to pass the ball"
+      }
+    },
+    {
+      "name": "Legion of Boom",
+      "position": "Seattle Seahawks' Secondary",
+      "texts": [
+        "\"Legion of Boom\", or LOB, is the nickname for the Defensive Backs of the Seahawks. Composed mainly by the All-Pro playersEarl Thomas III (Free Safety), Kam Chancellor (Strong Safety) and Richard Sherman (Cornerback), they have beingleading the league in various defensive categories since its formation, in 2011.",
+        "On 2016, Thomas III got injured with a broken leg, ending the season for him. He is now recovering from it and is expect to join his mates on 2017.",
+        "The Seattle Seahawks also re-signed its 2nd Cornerback, DeShawn Shead, during the Free Agency."
+      ],
+      "photo": {
+        "src": "images/players/lob.jpg",
+        "alt": "Legion of Boom",
+        "aria": "Kam Chancellor and Earl Thomas helping Richard Sherman while he runs the ball after an interception"
+      }
+    },
+    {
+      "name": "Bobby Wagner",
+      "position": "Linebacker",
+      "texts": [
+        "Bobby Wagner finished the 2016 season with impressive 167 tackles, leading the NFL and setting the franchise record for most tackles in one season. He also holds the record for most tackles in Super Bowls, with 22.",
+        "The All-Pro's work, together with the Legion of Boom, has made the Seahawks' defense one of the most feared in the league."
+      ],
+      "photo": {
+        "src": "images/players/wagner.jpg",
+        "alt": "Bobby Wagner",
+        "aria": "Bobby Wagner screaming in celebration"
+      }
+    },
+    {
+      "name": "Jimmy Graham",
+      "position": "Tight End",
+      "texts": [
+        "The only player in this list that hasn't started his carrer with the Seattle Seahawks, Jimmy Graham made history with the New Orleans Saints before being traded for the Center Max Unger in 2015. On the same year, while still getting used to his new team, he suffered a patellar tendon rupture and missed the rest of the season.",
+        "In 2016, fully recovered from his injury, Graham has made a great comeback and finished the season with 923 receiving yards, 65 receptions, and 6 touchdowns."
+      ],
+      "photo": {
+        "src": "images/players/graham.jpg",
+        "alt": "Jimmy Graham",
+        "aria": "Jimmy Graham running with the ball and extending his arm to avoid a defender"
+      }
+    },
+    {
+      "name": "Doug Baldwin",
+      "position": "Wide Receiver",
+      "texts": [
+        "Another underestimated player, Doug Baldwin was signed as an undrafted free agent by the Seahawks in 2011 and spent years being called \"pedestrian\" and \"mediocre\". Much like Russell Wilson, he has proven everyone wrong: In 2015 he joined Hall of Famer Jerry Rice as the only players in league history with at least 10 receiving touchdowns in a four-game span and caught at least two touchdowns in four straight games, a feat that only Calvin Johnson and Hall of Famer Cris Carter have accomplished since 1960. He also set the franchise record and lead the league for most receiving touchdowns in a single season, with 14, and was ranked as the 72nd best player in the NFL on the Top 100 Players of 2016."
+      ],
+      "photo": {
+        "src": "images/players/baldwin.jpg",
+        "alt": "Doug Baldwin",
+        "aria": "Doug Baldwin points to the sky in celebration after a catch"
+      }
+    }
+  ]
+}

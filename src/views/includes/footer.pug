@@ -3,7 +3,8 @@ footer
   section.information
     .disclaimer
       h5 Disclaimer
-      p My name is Gabriel Perdomo and I'm in no way (at all) a football expert or critic whatsoever. I'm just a Full-Stack Web Development student who happens to be a Seattle Seahawks fan, and this website is a project for my Nanodegree at Udacity, so it's not supposed to be quoted, linked, etcs, on any American Football-related website.
+      - const { disclaimer } = footer;
+      p= disclaimer
     .contact
       h5 Contact
       .links

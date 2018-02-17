@@ -3,73 +3,16 @@ extends layout.pug
 block content
   section.schedule
     h2.title Schedule
-    article.location
-      h3 Home Games
-      ul.games
-        li.team
-          p Arizona Cardinals
-          .team-photo
-            img(src="images/teams/cardinals.png" alt="Arizona Cardinals")
-        li.team
-          p San Francisco 49ers
-          .team-photo
-            img(src="images/teams/49ers.png" alt="San Francisco 49ers")
-        li.team
-          p Los Angeles Rams
-          .team-photo
-            img(src="images/teams/rams.png" alt="Los Angeles Rams")
-        li.team
-          p Atlanta Falcons
-          .team-photo
-            img(src="images/teams/falcons.png" alt="Atlanta Falcons")
-        li.team
-          p Philadelphia Eagles
-          .team-photo
-            img(src="images/teams/eagles.png" alt="Philadelphia Eagles")
-        li.team
-          p Washington Redskins
-          .team-photo
-            img(src="images/teams/redskins.png" alt="Washington Redskins")
-        li.team
-          p Houston Texans
-          .team-photo
-            img(src="images/teams/texans.png" alt="Houston Texans")
-        li.team
-          p Indianapolis Colts
-          .team-photo
-            img(src="images/teams/colts.png" alt="Indianapolis Colts")
-    article.location
-      h3 Away Games
-      ul.games
-        li.team
-          p Arizona Cardinals
-          .team-photo
-            img(src="images/teams/cardinals.png" alt="Arizona Cardinals")
-        li.team
-          p San Francisco 49ers
-          .team-photo
-            img(src="images/teams/49ers.png" alt="San Francisco 49ers")
-        li.team
-          p Los Angeles Rams
-          .team-photo
-            img(src="images/teams/rams.png" alt="Los Angeles Rams")
-        li.team
-          p Dallas Cowboys
-          .team-photo
-            img(src="images/teams/cowboys.png" alt="Dallas Cowboys")
-        li.team
-          p Green Bay Packers
-          .team-photo
-            img(src="images/teams/packers.png" alt="Green Bay Packers")
-        li.team
-          p New York Giants
-          .team-photo
-            img(src="images/teams/giants.png" alt="New York Giants")
-        li.team
-          p Tennessee Titans
-          .team-photo
-            img(src="images/teams/titans.png" alt="Tennessee Titans")
-        li.team
-          p Jacksonville Jaguars
-          .team-photo
-            img(src="images/teams/jaguars.png" alt="Jacksonville Jaguars")
+    - const { locations } = schedule;
+    each location in locations
+      - const { title, games } = location;
+      article.location
+        h3 #{title} Games
+        ul.games
+          each game in games
+            - const { name, photo } = game;
+            li.team
+              p= name
+              .team-photo
+                - const { src, alt, aria } = photo;
+                img(src=src alt=alt aria-label=aria)
