@@ -7,13 +7,19 @@
       width: auto;
       max-width: none;
       height: 100%;
-      transform: translateX(-80px);
+      transform: translateX(-70px);
+    }
+
+
+    ////// Media Query //////
+    @include query($bp-md) {
+      transform: translateX(-50px);
     }
 
 
     ////// Media Query //////
     @include query($bp-md2) {
-      transform: translateX(-50px);
+      transform: translateX(-40px);
     }
 
 

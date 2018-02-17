@@ -1,0 +1,28 @@
+header
+  .navbar
+    .navbar-container
+      .navbar-icons
+        .logo
+          a(href="/")
+            img(src="images/logo.png" alt="Seattle Seahawks Logo")
+
+        .hamburger-container
+          button.hamburger.hamburger--spin-r(type="button" onclick="toggleHamburger()")
+            span.hamburger-box
+              span.hamburger-inner
+      nav.menu
+        ul.menu-items
+          li.menu-item
+            a(href="/") Overview
+
+          li.menu-item
+            a(href="/players") Key Players
+
+          li.menu-item
+            a(href="/needs") Team Needs
+
+          li.menu-item
+            a(href="/schedule") Schedule
+  .banner
+    h1 Go Hawks '17
+    span Seattle Seahawks Fanpage

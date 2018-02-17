@@ -1,0 +1,18 @@
+extends layout.pug
+
+block content
+  section.schedule
+    h2.title Schedule
+    - const { locations } = schedule;
+    each location in locations
+      - const { title, games } = location;
+      article.location
+        h3 #{title} Games
+        ul.games
+          each game in games
+            - const { name, photo } = game;
+            li.team
+              p= name
+              .team-photo
+                - const { src, alt, aria } = photo;
+                img(src=src alt=alt aria-label=aria)

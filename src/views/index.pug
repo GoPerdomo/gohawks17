@@ -1,0 +1,13 @@
+extends layout.pug
+
+block content
+  - const { texts, photo } = overview;
+  section.overview
+    h2.title Overview
+    article.overview-info
+      .overview-text
+        each text in texts
+          p= text
+      .overview-photo
+        - const { src, alt, aria } = photo;
+        img(src=src alt=alt aria-label=aria)

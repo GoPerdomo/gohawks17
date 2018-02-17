@@ -1,0 +1,17 @@
+extends layout.pug
+
+block content
+  section.players
+    h2.title Key Players
+    each player in players
+      article.player
+        h3= player.name
+        h4= player.position
+        .player-info
+          - const { texts, photo } = player;
+          .player-text
+            each text in texts
+              p= text
+          .player-photo
+            - const { src, alt, aria } = photo;
+            img(src=src alt=alt aria-label=aria)
