@@ -2,7 +2,6 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-const config = require('./config/config');
 const routes = require('./routes/index');
 
 // Set pug as template engine
@@ -30,6 +29,7 @@ app.use((err, req, res, next) => {
 });
 
 // Listen to port
-app.listen(config.port, () => {
-  console.log(`Listening on port ${config.port}`);
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Listening on port ${port}`);
 });
