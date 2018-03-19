@@ -1,5 +1,5 @@
 # Go Hawks '17 #
-A Seattle Seahawks fanpage with my predictions for the team's 2017 season.
+A Seattle Seahawks fan page with my predictions for their 2017 season.
 
 <a href="https://gohawks17.herokuapp.com/" target="_blank">https://gohawks17.herokuapp.com/</a>
 
