@@ -26,34 +26,34 @@ So I've implemented the following:
 
 ## Results ##
 
-### Desktop ###
+### Desktop ###`
 
 <p align="center">
-  <a href="assets/before-overview.jpg" target="_blank">
+  <a href="https://raw.githubusercontent.com/GoPerdomo/gohawks17/master/assets/before-overview.jpg" target="_blank">
     <img src="assets/before-overview.jpg" width="440">
   </a>
-  <a href="assets/after-overview.jpg" target="_blank">
+  <a href="https://raw.githubusercontent.com/GoPerdomo/gohawks17/master/assets/after-overview.jpg" target="_blank">
     <img src="assets/after-overview.jpg" width="440">
   </a>
 
-  <a href="assets/before-players.jpg" target="_blank">
+  <a href="https://raw.githubusercontent.com/GoPerdomo/gohawks17/master/assets/before-players.jpg" target="_blank">
     <img src="assets/before-players.jpg" width="440">
   </a>
-  <a href="assets/after-players.jpg" target="_blank">
+  <a href="https://raw.githubusercontent.com/GoPerdomo/gohawks17/master/assets/after-players.jpg" target="_blank">
     <img src="assets/after-players.jpg" width="440">
   </a>
 
-  <a href="assets/before-needs.jpg" target="_blank">
+  <a href="https://raw.githubusercontent.com/GoPerdomo/gohawks17/master/assets/before-needs.jpg" target="_blank">
     <img src="assets/before-needs.jpg" width="440">
   </a>
-  <a href="assets/after-needs.jpg" target="_blank">
+  <a href="https://raw.githubusercontent.com/GoPerdomo/gohawks17/master/assets/after-needs.jpg" target="_blank">
     <img src="assets/after-needs.jpg" width="440">
   </a>
 
-  <a href="assets/before-schedule.jpg" target="_blank">
+  <a href="https://raw.githubusercontent.com/GoPerdomo/gohawks17/master/assets/before-schedule.jpg" target="_blank">
     <img src="assets/before-schedule.jpg" width="440">
   </a>
-  <a href="assets/after-schedule.jpg" target="_blank">
+  <a href="https://raw.githubusercontent.com/GoPerdomo/gohawks17/master/assets/after-schedule.jpg" target="_blank">
     <img src="assets/after-schedule.jpg" width="440">
   </a>
 </p>
