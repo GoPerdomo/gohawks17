@@ -61,6 +61,6 @@ So I've implemented the following:
 ### Mobile ###
 
 <p align="center">
-  <img src="assets/before-mobile.jpg" width="300">
-  <img src="assets/after-mobile.jpg" width="300">
+  <img src="https://raw.githubusercontent.com/GoPerdomo/gohawks17/master/assets/before-mobile.jpg" width="300">
+  <img src="https://raw.githubusercontent.com/GoPerdomo/gohawks17/master/assets/after-mobile.jpg" width="300">
 </p>
