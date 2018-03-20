@@ -26,7 +26,7 @@ So I've implemented the following:
 
 ## Results ##
 
-### Desktop ###`
+### Desktop ###
 
 <p align="center">
   <a href="https://raw.githubusercontent.com/GoPerdomo/gohawks17/master/assets/before-overview.jpg" target="_blank">
