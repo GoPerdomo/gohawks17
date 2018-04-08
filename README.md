@@ -14,12 +14,12 @@ One year later I've decided for a redesign and to use some of the technologies I
 
 So I've implemented the following:
 
-- **A complete redesign**
+- **Complete Redesign**
 - **Responsive Design** - Automatically adapt to the device's screen size
 - **Sass/SCSS** - CSS Preprocessor
-- **Express** - Web Framework
-- **Pug** - Template Engine
-- **Deploy to Heroku** - Cloud Platform
+- **Express** - Web Framework for Node.js
+- **Pug** - Template Engine for Node.js
+- **Deployment to Heroku** - Cloud Application Platform
 
 *I also tried to keep changes to the original content to a minimum, even though my predictions turned out to be terribly wrong.*
 
