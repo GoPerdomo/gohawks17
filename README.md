@@ -3,6 +3,14 @@ A Seattle Seahawks fan page with my predictions for their 2017 season.
 
 <a href="https://gohawks17.herokuapp.com/" target="_blank">https://gohawks17.herokuapp.com/</a>
 
+## Table of Contents ##
+- [Backstory](#backstory)
+- [Update Time](#update-time)
+- [Results](#results)
+  - [Desktop](#desktop)
+  - [Mobile](#mobile)
+
+
 ## Backstory ##
 This project was part of my Intro to Programming Nanodegree at Udacity in early 2017 and my first contact with code. For that reason I was very proud of it, even though it looked **painfully awful** (as one would expect from a first-timer).
 
