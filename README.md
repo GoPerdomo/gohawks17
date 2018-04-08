@@ -22,7 +22,7 @@ One year later I've decided for a redesign and to use some of the technologies I
 
 So I've implemented the following:
 
-- **Complete Redesign**
+- **Complete Redesign** - Fully redesign the website using a mobile-first approach
 - **Responsive Design** - Automatically adapt to the device's screen size
 - **Sass/SCSS** - CSS Preprocessor
 - **Express** - Web Framework for Node.js
